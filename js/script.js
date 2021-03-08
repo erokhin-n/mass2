@@ -9,7 +9,7 @@ function right_click() {
 	if(massage_view_1.className === 'massage_view_1') {
 
 		massage_view_1.setAttribute('class', 'hidden');
-    massage_view_2.setAttribute('class', 'massage_view_2 anim_slider_rigth');
+    massage_view_2.setAttribute('class', 'massage_view_2');
 
 	} else if (massage_view_2.className === 'massage_view_2') {
 

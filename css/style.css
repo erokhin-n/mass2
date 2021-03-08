@@ -160,7 +160,7 @@ body {
 }
 
 .anim_slider_rigth {
-  /*transition: 1s;*/
+  transition: 1s;
   background-color: green;
 }
 
