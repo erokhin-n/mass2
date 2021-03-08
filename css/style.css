@@ -161,7 +161,7 @@ body {
 
 .massage_views {
   position: relative;
-  animation: box_shadow 4s infinite;
+  /*animation: box_shadow 4s infinite;*/
 }
 
 .massage_view{
@@ -175,7 +175,8 @@ body {
 
 .menu_link {
   font-size: 48px;
-  color: #000;
+  color: #696969;
+  text-shadow: 0px 0px 10px #000;
 }
 
 .massage_list {
@@ -227,7 +228,7 @@ body {
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  left: 91%;
+  left: 85%;
   cursor: pointer;  
 }
 
