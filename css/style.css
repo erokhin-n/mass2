@@ -122,51 +122,14 @@ body {
 
 .massage_views {
   position: relative;
-  display: grid;
-  grid-template: 100% / repeat(3, 100%) ;
-  transition: 1s;
 }
 
-.massage_view_1 {
+.massage_view{
   min-width: 100%;
   min-height: 100vh;
   display: grid;
   grid-template: minmax( 100%, 1fr ) / repeat( 2, 1fr );
   position: relative;
-  /*transition: 1s;*/
-}
-
-.massage_view_2 {
-  min-width: 100%;
-  min-height: 100vh;
-  display: grid;
-  grid-template: minmax( 100%, 1fr ) / repeat( 2, 1fr );
-  position: relative;
-  /*transition: 1s;*/
-}
-
-.massage_view_3 {
-  min-width: 100%;
-  min-height: 100vh;
-  display: grid;
-  grid-template: minmax( 100%, 1fr ) / repeat( 2, 1fr );
-  position: relative;
-  /*transition: 1s;*/
-}
-
-.hidden{
-  display: none;
-  transition: 1s;
-}
-
-.anim_slider_rigth {
-  transition: 1s;
-  background-color: green;
-}
-
-.anim_slider_left {
-  transition: 1s;
-  transform: rotateY(-360deg);
 }
 
 .menu_link {
@@ -182,7 +145,6 @@ body {
   text-align: center;
   display: grid;
   grid-template: 30% 70% / 1fr;
-  transition: 0.5s;
 }
 
 
@@ -191,36 +153,28 @@ body {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  /*transition: 1.5s;*/
-   
+  -o-background-size: cover; 
 }
 
 .img_1 {
   background-image: url('../img/mass_view_img_1.jpg');
-  transition: 1.5s;
 }
 
 .img_2 {
   background-image: url('../img/mass_view_img_2.jpg');
-  transition: 1.5s;
 }
 
 .img_3 {
   background-image: url('../img/mass_view_img_3.jpg');
-  /*transition: 1.5s;*/
 }
 
 .description_heading {
   font-size: 36px;
   align-self: end;
-  /*transition: 0.5s;*/
-
 }
 
 .description_text {
   font-size: 18px;
-  /*transition: 0.5s;*/
 }
 
 
