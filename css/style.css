@@ -65,6 +65,45 @@ body {
   font-family: 'Montserrat';
 }
 
+
+/*анимация*/
+
+@keyframes box_shadow {
+  0% {box-shadow: 0px 1px 16px 4px #000;}
+  50% {box-shadow: 0px 1px 5px 1px #000;}
+  100% {box-shadow: 0px 1px 24px 10px #000;} 
+}
+
+@keyframes rotate {
+  0% {opacity: 0;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+@keyframes rotate2 {
+  0% {opacity: 0;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+@keyframes rotate3 {
+  0% {opacity: 0;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+.slide_anim_1{
+  animation: rotate 0.7s linear ;
+}
+.slide_anim_2{
+  animation: rotate2 0.7s linear;
+}
+
+.slide_anim_3{
+  animation: rotate3 0.7s linear;
+}
+
+/*-----*/
 /*.header,
 .main,
 .footer,
@@ -122,55 +161,21 @@ body {
 
 .massage_views {
   position: relative;
-}
-/*анимация*/
-@keyframes shadow {
-  from {text-shadow: 0 0 3px black;}
-  50% {text-shadow: 0 0 30px pink;}
-  to {text-shadow: 0 0 3px green;}
+  animation: box_shadow 4s infinite;
 }
 
-@keyframes rotate {
-  0% {opacity: 0;}
-  50% {opacity: 0.5;}
-  100% {opacity: 1;}
-}
-
-@keyframes rotate2 {
-  0% {opacity: 0;}
-  50% {opacity: 0.5;}
-  100% {opacity: 1;}
-}
-
-@keyframes rotate3 {
-  0% {opacity: 0;}
-  50% {opacity: 0.5;}
-  100% {opacity: 1;}
-}
-
-.slide_anim_1{
-  animation: rotate 0.7s linear ;
-}
-.slide_anim_2{
-  animation: rotate2 0.7s linear;
-}
-
-.slide_anim_3{
-  animation: rotate3 0.7s linear;
-}
-
-/*-----*/
 .massage_view{
   min-width: 100%;
   min-height: 100vh;
   display: grid;
   grid-template: minmax( 100%, 1fr ) / repeat( 2, 1fr );
   position: relative;
+  box-shadow: 0px 1px 16px 4px #000
 }
 
 .menu_link {
   font-size: 48px;
-  color: #BEBEBE;
+  color: #000;
 }
 
 .massage_list {
@@ -265,5 +270,6 @@ body {
 
 .footer {
   background-color: #7b3f00;
+  box-shadow: 0px 1px 16px 4px #000
 }
 
