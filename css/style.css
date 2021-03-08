@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/* обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+/*конец*/
+
+
+body {
+  font-family: 'Montserrat';
+}
+
+/*.header,
+.main,
+.footer,
+.logo,
+.header_menu,
+.description_cont,
+.massage_view img,
+.massage_list{
+  border: 1px solid green;
+}*/
+/*REDLINE*/
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(blue, violet);
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  justify-self: center;
+}
+
+.header {
+  display: grid;
+  /*grid-template: repeat(3, 1fr) / 1fr;*/
+  min-height: 100vh;
+  background-image: url('../img/header.jpg');
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;  
+}
+
+/*.header_menu {
+  grid-row: 2/3;
+  grid-column: 4/7;
+}
+*/
+.header_list {
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr;
+  align-items: center;
+  justify-items: center;
+  min-width: 100%;
+  min-height: 100vh;
+
+}
+
+.massage_views {
+  position: relative;
+  display: grid;
+  grid-template: 100% / repeat(3, 100%) ;
+  transition: 1s;
+}
+
+.massage_view_1 {
+  min-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template: minmax( 100%, 1fr ) / repeat( 2, 1fr );
+  position: relative;
+  /*transition: 1s;*/
+}
+
+.massage_view_2 {
+  min-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template: minmax( 100%, 1fr ) / repeat( 2, 1fr );
+  position: relative;
+  /*transition: 1s;*/
+}
+
+.massage_view_3 {
+  min-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template: minmax( 100%, 1fr ) / repeat( 2, 1fr );
+  position: relative;
+  /*transition: 1s;*/
+}
+
+.hidden{
+  display: none;
+  transition: 1s;
+}
+
+.anim_slider_rigth {
+  /*transition: 1s;*/
+  background-color: green;
+}
+
+.anim_slider_left {
+  transition: 1s;
+  transform: rotateY(-360deg);
+}
+
+.menu_link {
+  font-size: 48px;
+  color: #BEBEBE;
+}
+
+.massage_list {
+  position: absolute;
+}
+
+.description_cont {
+  text-align: center;
+  display: grid;
+  grid-template: 30% 70% / 1fr;
+  transition: 0.5s;
+}
+
+
+.desc_img {
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  /*transition: 1.5s;*/
+   
+}
+
+.img_1 {
+  background-image: url('../img/mass_view_img_1.jpg');
+  transition: 1.5s;
+}
+
+.img_2 {
+  background-image: url('../img/mass_view_img_2.jpg');
+  transition: 1.5s;
+}
+
+.img_3 {
+  background-image: url('../img/mass_view_img_3.jpg');
+  /*transition: 1.5s;*/
+}
+
+.description_heading {
+  font-size: 36px;
+  align-self: end;
+  /*transition: 0.5s;*/
+
+}
+
+.description_text {
+  font-size: 18px;
+  /*transition: 0.5s;*/
+}
+
+
+.button_right, .button_left {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 91%;
+  cursor: pointer;  
+}
+
+.button_left {
+  left: 9%;
+}
+
+/*обо мне*/
+
+.about_me_1 {
+  min-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template: 1fr / repeat(2, 1fr);
+}
+
+.about_cont {
+  text-align: center;
+  display: grid;
+}
+
+.about_heading {
+  font-size: 36px;
+  align-self: end;
+}
+
+.about_img_cont {
+  background-image: url('../img/photo_1.jpg');
+  /*background-repeat: no-repeat repeat-y;*/
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.about_text {
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #f3f3;
+}
+
