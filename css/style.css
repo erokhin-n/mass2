@@ -131,9 +131,9 @@ body {
 }
 
 @keyframes rotate {
-  0% {rotate: 30deg;}
-  50% {rotate: 90deg;}
-  100% {rotate: 360deg;}
+  0% {rotate:10deg;}
+  50% {rotate:90deg;}
+  100% {rotate:180deg;}
 }
 
 @keyframes rotate2 {
