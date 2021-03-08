@@ -123,7 +123,43 @@ body {
 .massage_views {
   position: relative;
 }
+/*анимация*/
+@keyframes shadow {
+  from {text-shadow: 0 0 3px black;}
+  50% {text-shadow: 0 0 30px pink;}
+  to {text-shadow: 0 0 3px green;}
+}
 
+@keyframes rotate {
+  0% {rotate: 30deg;}
+  50% {rotate: 90deg;}
+  100% {rotate: 360deg;}
+}
+
+@keyframes rotate2 {
+  0% {rotate: 30deg;}
+  50% {rotate: 90deg;}
+  100% {rotate: 360deg;}
+}
+
+@keyframes rotate3 {
+  0% {rotate: 30deg;}
+  50% {rotate: 90deg;}
+  100% {rotate: 360deg;}
+}
+
+.slide_anim_1{
+  animation: rotate 1s;
+}
+.slide_anim_2{
+  animation: rotate2 1s;
+}
+
+.slide_anim_3{
+  animation: rotate3 1s;
+}
+
+/*-----*/
 .massage_view{
   min-width: 100%;
   min-height: 100vh;
@@ -175,6 +211,7 @@ body {
 
 .description_text {
   font-size: 18px;
+  animation: shadow 2s infinite;
 }
 
 
