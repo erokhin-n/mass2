@@ -68,12 +68,12 @@ body {
 
 /*анимация*/
 
-@keyframes box_shadow {
+/*@keyframes box_shadow {
   0% {box-shadow: 0px 1px 16px 4px #000;}
   50% {box-shadow: 0px 1px 5px 1px #000;}
   100% {box-shadow: 0px 1px 24px 10px #000;} 
 }
-
+*/
 @keyframes rotate {
   0% {opacity: 0;}
   50% {opacity: 0.5;}
@@ -160,6 +160,7 @@ body {
   bottom: 10%;
   right: 30%;
   left: 19%;
+  animation: rotate 0.4s linear;
 }
 
 .hd_mas_view {
