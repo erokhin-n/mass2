@@ -64,6 +64,9 @@ function close_views() {
 	header_mass_views.setAttribute('class', 'hidden');
 }
 
-function scroll_to_view() {
+function scroll_to_view(event) {
 	img.scrollIntoView({behavior: "smooth"});
+	slide_2();
+	let testEvent = event.target;
+	console.log(testEvent);
 }
