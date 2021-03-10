@@ -21,11 +21,17 @@
 		<nav class="header_menu">
 			<ul class="header_list">
 				<li><a href="#" class="menu_link menu_heading">НАЗВАНИЕ САЙТА</a></li>
-				<li><a href="#" class="menu_link">виды массажа</a></li>
+				<li><a href="#" class="menu_link" onclick = 'head_mass_show()'>виды массажа</a></li>
 				<li><a href="#" class="menu_link">обо мне</a></li>
 				<li><a href="#" class="menu_link">контакты</a></li>
 			</ul>
 		</nav>
+		<div class="hidden" id='header_mass_views'>
+			<div class="mass_views_close">close</div>
+			<div class="hd_mas_view">первый вид массажа</div>
+			<div class="hd_mas_view">второй вид массажа</div>
+			<div class="hd_mas_view">третий вид массажа</div>
+		</div>
 	</header>
 	<main class="main">
 		<section class="massage_views">

@@ -4,7 +4,7 @@ let massage_view = document.getElementById('massage_view');
 let desc_head = document.getElementById('desc_head');
 let desc_text = document.getElementById('desc_text');
 let img = document.getElementById('desc_img');
-
+let header_mass_views = document.getElementById('header_mass_views');
 
 function slide_1(){
 	massage_view.setAttribute('class', 'massage_view slide_anim_1');
@@ -55,4 +55,6 @@ function left_click() {
 	}
 }
 
-
+function head_mass_show() {
+	header_mass_views.setAttribute('class', 'header_massage_views');
+}
