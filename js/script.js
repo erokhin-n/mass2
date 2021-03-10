@@ -66,7 +66,16 @@ function close_views() {
 
 function scroll_to_view(event) {
 	img.scrollIntoView({behavior: "smooth"});
-	slide_2();
-	let testEvent = event.target;
-	console.log(testEvent);
+	let click_event = event.target;
+	switch (click_event.textContent){
+		case "первый вид массажа":
+			slide_1();
+			break;
+		case "второй вид массажа":
+		  slide_2();
+		  break; 
+		case "третий вид массажа":
+		  slide_3();
+		  break; 
+	}
 }
