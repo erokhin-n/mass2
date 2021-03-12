@@ -273,6 +273,7 @@ body {
   right: 48%;
   z-index: 2;
   /*position: fixed;*/
+  animation: rotate 1s linear;
 }
 
 /*обо мне*/

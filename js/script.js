@@ -6,14 +6,23 @@ let desc_text = document.getElementById('desc_text');
 let img = document.getElementById('desc_img');
 let header_mass_views = document.getElementById('header_mass_views');
 let about_me = document.getElementById('about_me');
+let button_up = document.getElementById('button_up');
 let header = document.getElementById('header');
 
 
-// window.addEventListener('scroll', function() {
-//   let button_up = document.getElementById('button_up');
-//   button_up.setAttribute('class', 'button_up');
-
-//   });
+window.addEventListener('scroll', function() {
+  let scroll_px = document.documentElement.scrollTop;
+  let scroll_height = document.documentElement.scrollHeight;
+  let scroll_procent = Math.floor((scroll_px / scroll_height) * 100);
+  let scroll_proc = document.getElementById('scroll_proc');
+  scroll_proc.innerHTML = scroll_procent;
+  console.log(scroll_procent);
+  if (scroll_procent > 15){
+  	button_up.setAttribute('class', 'button_up');	
+  } else if (scroll_procent < 15) {
+  	button_up.setAttribute('class', 'hidden');	
+  }
+});
 
 function scroll_up() {
 	header.scrollIntoView({behavior: "smooth"});
