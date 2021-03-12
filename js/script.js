@@ -6,7 +6,18 @@ let desc_text = document.getElementById('desc_text');
 let img = document.getElementById('desc_img');
 let header_mass_views = document.getElementById('header_mass_views');
 let about_me = document.getElementById('about_me');
+let header = document.getElementById('header');
 
+
+// window.addEventListener('scroll', function() {
+//   let button_up = document.getElementById('button_up');
+//   button_up.setAttribute('class', 'button_up');
+
+//   });
+
+function scroll_up() {
+	header.scrollIntoView({behavior: "smooth"});
+}
 
 function slide_1(){
 	massage_view.setAttribute('class', 'massage_view slide_anim_1');
