@@ -5,6 +5,7 @@ let desc_head = document.getElementById('desc_head');
 let desc_text = document.getElementById('desc_text');
 let img = document.getElementById('desc_img');
 let header_mass_views = document.getElementById('header_mass_views');
+let about_me = document.getElementById('about_me');
 
 
 function slide_1(){
@@ -65,17 +66,21 @@ function close_views() {
 }
 
 function scroll_to_view(event) {
-	img.scrollIntoView({behavior: "smooth"});
-	let click_event = event.target;
-	switch (click_event.textContent){
-		case "первый вид массажа":
-			slide_1();
-			break;
-		case "второй вид массажа":
-		  slide_2();
-		  break; 
-		case "третий вид массажа":
-		  slide_3();
-		  break; 
-	}
+  img.scrollIntoView({behavior: "smooth"});
+  let click_event = event.target;
+  switch (click_event.textContent){
+    case "первый вид массажа":
+      slide_1();
+      break;
+    case "второй вид массажа":
+      slide_2();
+      break; 
+    case "третий вид массажа":
+      slide_3();
+      break; 
+    case "обо мне":
+      about_me.scrollIntoView({behavior: "smooth"});    
+  }
 }
+
+
