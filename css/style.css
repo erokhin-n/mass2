@@ -92,6 +92,24 @@ body {
   100% {opacity: 1;}
 }
 
+@keyframes rotate3 {
+  0% {opacity: 0;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+@keyframes invisible {
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 0;}
+}
+
+@keyframes change_color {
+  0% {background-color: #f3f3f3}
+  50% {background-color: #000;}
+  100% {background-color: #fff;}
+}
+
 .slide_anim_1{
   animation: rotate 0.7s linear ;
 }
@@ -147,10 +165,10 @@ body {
 
 .header_massage_views {
   position: absolute;
-  min-width: 60%;
-  min-height: 80vh;
+  /*min-width: 60%;*/
+  /*min-height: 80vh;*/
   font-size: 45px;
-  background-color: grey;
+   background-color: rgba(0, 0, 0, 0);
   justify-self: center;
   display: grid;
   justify-items: center;
@@ -160,7 +178,36 @@ body {
   bottom: 10%;
   right: 30%;
   left: 19%;
+  /*animation: rotate 0.4s linear;*/
+  /*animation: change_color 1s;*/
+  /*animation: invisible 1s;*/
+}
+
+.head_view_1, .head_view_2, .head_view_3 {
+  position: absolute;
+  min-width: 75%;
+  max-height: 18vh;
+  font-size: 45px;
+  justify-self: center;
+  align-items: center;
+  border-radius: 20px;
+  top: 10%;
+  bottom: 10%;
+  right: 30%;
+  left: 19%;
+  cursor: pointer; 
+  background-color: rgba(0, 0, 0, 0.5);
   animation: rotate 0.4s linear;
+}
+
+.head_view_2{
+  top: 30%;
+  /*bottom: 30%;*/
+}
+
+.head_view_3{
+  top: 60%;
+  /*bottom: 30%;*/
 }
 
 .hd_mas_view {
@@ -187,7 +234,8 @@ body {
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
+  /*animation: change_color 1s;*/
 }
 
 .massage_views {

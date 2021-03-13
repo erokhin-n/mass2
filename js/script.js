@@ -79,6 +79,17 @@ function left_click() {
 
 function head_mass_show() {
 	header_mass_views.setAttribute('class', 'header_massage_views');
+	view_1 = document.getElementById('head_view_1');
+	view_2 = document.getElementById('head_view_2');
+	view_3 = document.getElementById('head_view_3');
+	console.log(view_3);
+	view_1.setAttribute('class', 'head_view_1');
+	setTimeout(()=> {
+		view_2.setAttribute('class', 'head_view_2');
+	}, 500);
+	setTimeout(()=> {
+		view_3.setAttribute('class', 'head_view_3');
+	}, 1000);
 }
 
 function close_views() {
