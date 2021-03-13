@@ -1,3 +1,4 @@
+let header = document.getElementById('header');
 let button_right = document.getElementById('button_right');
 let button_left = document.getElementById('button_left');
 let massage_view = document.getElementById('massage_view');
@@ -7,12 +8,10 @@ let img = document.getElementById('desc_img');
 let header_mass_views = document.getElementById('header_mass_views');
 let about_me = document.getElementById('about_me');
 let button_up = document.getElementById('button_up');
-let header = document.getElementById('header');
 let view_1 = document.getElementById('head_view_1');
 let	view_2 = document.getElementById('head_view_2');
 let	view_3 = document.getElementById('head_view_3');
 let close_but = document.getElementById('close_but');
-
 
 window.addEventListener('scroll', function() {
   let scroll_px = document.documentElement.scrollTop;
@@ -83,17 +82,17 @@ function left_click() {
 
 function head_mass_show() {
 	header_mass_views.setAttribute('class', 'header_massage_views');
-	view_1 = document.getElementById('head_view_1');
-	view_2 = document.getElementById('head_view_2');
-	view_3 = document.getElementById('head_view_3');
-	view_1.setAttribute('class', 'head_view_1');
-	close_but.setAttribute('class', 'mass_views_close');
+	header.setAttribute('class', 'header header_blur')
+	close_but.setAttribute('class', 'head_close');
+	setTimeout(()=> {
+		view_1.setAttribute('class', 'head_view_1');
+	}, 200);
 	setTimeout(()=> {
 		view_2.setAttribute('class', 'head_view_2');
-	}, 500);
-	setTimeout(()=> {
+	}, 400);
+	setTimeout(()=>{
 		view_3.setAttribute('class', 'head_view_3');
-	}, 1000);
+	}, 600);
 }
 
 function close_views() {
