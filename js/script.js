@@ -8,6 +8,10 @@ let header_mass_views = document.getElementById('header_mass_views');
 let about_me = document.getElementById('about_me');
 let button_up = document.getElementById('button_up');
 let header = document.getElementById('header');
+let view_1 = document.getElementById('head_view_1');
+let	view_2 = document.getElementById('head_view_2');
+let	view_3 = document.getElementById('head_view_3');
+let close_but = document.getElementById('close_but');
 
 
 window.addEventListener('scroll', function() {
@@ -82,8 +86,8 @@ function head_mass_show() {
 	view_1 = document.getElementById('head_view_1');
 	view_2 = document.getElementById('head_view_2');
 	view_3 = document.getElementById('head_view_3');
-	console.log(view_3);
 	view_1.setAttribute('class', 'head_view_1');
+	close_but.setAttribute('class', 'mass_views_close');
 	setTimeout(()=> {
 		view_2.setAttribute('class', 'head_view_2');
 	}, 500);
@@ -93,7 +97,14 @@ function head_mass_show() {
 }
 
 function close_views() {
-	header_mass_views.setAttribute('class', 'hidden');
+	view_3.setAttribute('class', 'head_v_opac');
+	setTimeout(()=> {
+		view_2.setAttribute('class', 'head_v_opac');
+	}, 500);
+	setTimeout(()=> {
+		view_1.setAttribute('class', 'head_v_opac');
+		header_mass_views.setAttribute('class', 'hidden');
+	}, 1000);
 }
 
 function scroll_to_view(event) {
