@@ -97,13 +97,13 @@ function head_mass_show() {
 }
 
 function close_views() {
-	view_3.setAttribute('class', 'head_v_opac');
+	view_3.setAttribute('class', 'head_v_opac_3');
 	setTimeout(()=> {
-		view_2.setAttribute('class', 'head_v_opac');
+		view_2.setAttribute('class', 'head_v_opac_2');
 	}, 500);
 	setTimeout(()=> {
-		view_1.setAttribute('class', 'head_v_opac');
-		header_mass_views.setAttribute('class', 'hidden');
+		view_1.setAttribute('class', 'head_v_opac_1');
+		header_mass_views.setAttribute('class', 'header_massage_views_opac');
 	}, 1000);
 }
 
