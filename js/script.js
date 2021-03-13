@@ -97,13 +97,26 @@ function head_mass_show() {
 
 function close_views() {
 	view_3.setAttribute('class', 'head_v_opac_3');
+	console.log('1');
 	setTimeout(()=> {
 		view_2.setAttribute('class', 'head_v_opac_2');
-	}, 500);
+		console.log('2')
+	}, 200);
 	setTimeout(()=> {
 		view_1.setAttribute('class', 'head_v_opac_1');
-		header_mass_views.setAttribute('class', 'header_massage_views_opac');
-	}, 1000);
+		console.log('3')
+	}, 400);
+	setTimeout(()=>{
+		header_mass_views.setAttribute('class', 'hidden_views');
+		close_but.setAttribute('class', 'head_close_opac');
+		header.setAttribute('class', 'header');
+		console.log('4');
+	}, 600);
+	// setTimeout(()=> {
+	// 	
+	// 	console.log('5');
+	// }, 800);
+	console.log('over');
 }
 
 function scroll_to_view(event) {
