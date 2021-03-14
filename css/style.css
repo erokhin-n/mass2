@@ -141,9 +141,15 @@ body {
 }
 
 @keyframes show_arrow {
-  0% {transform: scale(2) box-shadow: 10px 10px 10px 10px;}
+  0% {transform: scale(2);}
   50% {transform: scale(1.5);}
-  100% {transform: scale(1) box-shadow: 10px 10px 10px 10px;;}
+  100% {transform: scale(1);}
+}
+
+@keyframes arrow_hide {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.5);}
+  100% {transform: scale(0);}
 }
 
 
@@ -513,6 +519,18 @@ body {
   transform: rotate(30deg);
   top: 83%;
   left: 41%;
+}
+
+.button_up_hide {
+  content: ' ';
+  position: absolute;
+  /*transform: rotate(45deg);*/
+  background-color: rgba(0, 0, 0, 0);
+  width: 100px;
+  height: 10px;
+  display: block;
+  border-radius: 10px;
+  animation: arrow_hide 1s linear;
 }
 
 /*обо мне*/
