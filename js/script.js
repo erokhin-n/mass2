@@ -26,7 +26,7 @@ window.addEventListener('scroll', function() {
   	button_up.setAttribute('class', 'hidden');	
   }
 });
-   
+
 function scroll_up() {
 	header.scrollIntoView({behavior: "smooth"});
 }
@@ -79,7 +79,7 @@ function left_click() {
 	    break;
 	}
 }
-
+ 
 function head_mass_show() {
 	header_mass_views.setAttribute('class', 'header_massage_views');
 	header.setAttribute('class', 'header header_blur')
@@ -136,5 +136,3 @@ function scroll_to_view(event) {
       about_me.scrollIntoView({behavior: "smooth"});    
   }
 }
-
-

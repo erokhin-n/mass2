@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   border: 0; }
- 
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -91,7 +91,7 @@ body {
   50% {opacity: 0.5;}
   100% {opacity: 1;}
 }
-
+ 
 /*@keyframes rotate3 {
   0% {opacity: 0;}
   50% {opacity: 0.5;}
@@ -446,4 +446,3 @@ body {
   background-color: #7b3f00;
   box-shadow: 0px 1px 16px 4px #000
 }
-
