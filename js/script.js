@@ -26,7 +26,7 @@ window.addEventListener('scroll', function() {
   	button_up.setAttribute('class', 'hidden');	
   }
 });
-
+   
 function scroll_up() {
 	header.scrollIntoView({behavior: "smooth"});
 }
