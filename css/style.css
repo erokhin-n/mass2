@@ -110,6 +110,12 @@ body {
   100% {transform: translate(0%, 0%);}
 }
 
+@keyframes down_head_views {
+  0% {transform: translate(0%, 0%);}
+  50% {transform: translate(0%, 50%);}
+  100% {transform: translate(0%, 100%);}
+}
+
 @keyframes visible {
   0% {transform: scale(0);}
   50% {transform: scale(0.5);}
@@ -117,11 +123,22 @@ body {
 }
 
 @keyframes disappear {
-  0% {opacity: 1;}
-  50% {opacity: 0.5;}
-  100% {opacity: 0;}
+  0% {transform: scale(1);}
+  50% {transform: scale(0.5);}
+  100% {transform: scale(0);}
 }
 
+@keyframes blured {
+  0% {filter: blur(0);}
+  50% {filter: blur(5px);}
+  100% {filter: blur(20px);}
+}
+
+@keyframes no_blured {
+  0% {filter: blur(20px);}
+  50% {filter: blur(5px);}
+  100% {filter: blur(0);}
+}
 
 
 .slide_anim_1{
@@ -164,8 +181,6 @@ body {
   justify-self: center;
 }
 
-
-
 .header {
   display: grid;
   /*grid-template: repeat(3, 1fr) / 1fr;*/
@@ -177,14 +192,16 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;  
   position: relative;
+}
 
-
+.header_no_blur {
+  animation: no_blured 0.8s linear;
 }
 
 .header_blur {
-  filter: blur(10px);
-  -webkit-filter:blur(10px);
-  /*transition: 0.5s;*/
+  filter: blur(20px);
+  -webkit-filter:blur(20px);
+  animation: blured 0.8s linear;
 }
 
 .header_massage_views {
@@ -201,10 +218,10 @@ body {
   left: 18%;
   color: rgba(0, 0, 0, 0);
   animation: up_head_views 0.5s linear;
-
 }
 
-.header_massage_views_opac {
+.head_mass_down {
+  animation: down_head_views 0.7s linear;
   position: absolute;
   min-height: 80vh;
   font-size: 45px;
@@ -216,8 +233,23 @@ body {
   bottom: 107%;
   right: 18%;
   left: 18%;
-  animation: up_head_views 0.5s reverse;
+  color: rgba(0, 0, 0, 0);
+  /*animation: up_head_views 0.5s linear;*/
 }
+
+/*.header_massage_views_opac {
+  position: absolute;
+  min-height: 80vh;
+  font-size: 45px;
+  background-color: rgba(0, 0, 0, 0);
+  display: grid;
+  justify-content: center;
+  border-radius: 10px;
+  top: 0;
+  right: 18%;
+  left: 18%;
+  animation: down_head_views 0.5s linear;
+}*/
 
 /*.blur {
   position: absolute; 
@@ -295,7 +327,7 @@ body {
   /*filter: 0px;*/
   /*filter: none;*/
   padding: 0 30px 0 30px;
-  /*animation: disappear 0.8s linear;*/
+  animation: disappear 0.5s linear;
 }
 
 
@@ -323,15 +355,16 @@ body {
   position: absolute;
   min-height: 80vh;
   font-size: 45px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 1);
   display: none;
   justify-content: center;
   border-radius: 10px;
-  top: -95%;
-  bottom: 107%;
+  top: 5%; 
+  /*bottom: 107%;*/
   right: 18%;
   left: 18%;
-  animation: 0.4s linear;
+  /*animation: 0.4s linear;*/
+  animation: down_head_views 0.5s linear;
 }
 
 .massage_views {

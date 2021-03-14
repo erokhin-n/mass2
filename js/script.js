@@ -1,3 +1,5 @@
+"use strict";
+
 let header = document.getElementById('header');
 let button_right = document.getElementById('button_right');
 let button_left = document.getElementById('button_left');
@@ -99,26 +101,23 @@ function head_mass_show() {
 
 function close_views() {
 	view_3.setAttribute('class', 'head_v_opac_3');
-	console.log('1');
-	setTimeout(function() {
+	header_mass_views.setAttribute('class', 'head_mass_down');
+	// console.log('1');
+	setTimeout(()=> {
 		view_2.setAttribute('class', 'head_v_opac_2');
-		console.log('2')
+		// console.log('2')
 	}, 200);
-	setTimeout(function() {
+	setTimeout(()=> {
 		view_1.setAttribute('class', 'head_v_opac_1');
-		console.log('3')
+		// header_mass_views.setAttribute('class', 'header_massage_views_opac')
+		// console.log('3')
 	}, 400);
-	setTimeout(function(){
-		header_mass_views.setAttribute('class', 'hidden_views');
+	setTimeout(()=>{
 		close_but.setAttribute('class', 'head_close_opac');
-		header.setAttribute('class', 'header');
-		console.log('4');
+		header_mass_views.setAttribute('class', 'hidden_views');
+		header.setAttribute('class', 'header header_no_blur');
+		// console.log('4');
 	}, 600);
-	// setTimeout(()=> {
-	// 	
-	// 	console.log('5');
-	// }, 800);
-	console.log('over');
 }
 
 function scroll_to_view(event) {
