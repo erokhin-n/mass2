@@ -104,6 +104,18 @@ body {
   100% {opacity: 1;}
 }*/
 
+@keyframes up_head_views {
+  0% {transform: translate(0%, 100%);}
+  50% {transform: translate(0%, 50%);}
+  100% {transform: translate(0%, 0%);}
+}
+
+@keyframes visible {
+  0% {transform: scale(0);}
+  50% {transform: scale(0.5);}
+  100% {transform: scale(1);}
+}
+
 @keyframes disappear {
   0% {opacity: 1;}
   50% {opacity: 0.5;}
@@ -152,6 +164,8 @@ body {
   justify-self: center;
 }
 
+
+
 .header {
   display: grid;
   /*grid-template: repeat(3, 1fr) / 1fr;*/
@@ -186,14 +200,11 @@ body {
   right: 18%;
   left: 18%;
   color: rgba(0, 0, 0, 0);
-  animation: 0.4s linear;
- /*filter:blur(15px);*/
-  /*animation: rotate 0.4s linear;*/
-  /*animation: change_color 1s;*/
-  /*animation: invisible 1s;*/
+  animation: up_head_views 0.5s linear;
+
 }
 
-/*.header_massage_views_opac {
+.header_massage_views_opac {
   position: absolute;
   min-height: 80vh;
   font-size: 45px;
@@ -205,7 +216,8 @@ body {
   bottom: 107%;
   right: 18%;
   left: 18%;
-}*/
+  animation: up_head_views 0.5s reverse;
+}
 
 /*.blur {
   position: absolute; 
@@ -226,14 +238,13 @@ body {
   cursor: pointer; 
   /*background-color: #fff;*/
   background-color: rgba(0, 0, 0, 0.5);
-  /*animation: rotate 0.4s linear;*/
   justify-self: center;
   /*padding: 15% 0 0 0;*/
   align-content: center;
   filter: 0px;
   /*filter: none;*/
   padding: 0 30px 0 30px;
-  animation: rotate 0.4s linear;
+  animation: visible 0.4s linear;
 }
 
 .head_close {
@@ -242,7 +253,7 @@ body {
   padding: 0px 84px 0px 0px;
   display: grid;
   justify-content: start;
-  animation: rotate 0.4s linear;
+  /*animation: rotate 0.4s linear;*/
 }
 
 .cross {
@@ -284,7 +295,7 @@ body {
   /*filter: 0px;*/
   /*filter: none;*/
   padding: 0 30px 0 30px;
-  animation: disappear 0.8s linear;
+  /*animation: disappear 0.8s linear;*/
 }
 
 
@@ -303,11 +314,11 @@ body {
   min-height: 100vh;
 }
 
-.hidden {
-  
-  /*animation: change_color 1s;*/
+/*.hidden {
+  display: none;  
+  animation: change_color 1s;
 }
-
+*/
 .hidden_views {
   position: absolute;
   min-height: 80vh;
@@ -381,7 +392,7 @@ body {
 
 .description_text {
   font-size: 18px;
-  animation: shadow 2s infinite;
+  /*animation: shadow 2s infinite;*/
 }
 
 

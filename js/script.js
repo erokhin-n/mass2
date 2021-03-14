@@ -81,14 +81,16 @@ function left_click() {
 }
  
 function head_mass_show() {
-	header_mass_views.setAttribute('class', 'header_massage_views');
-	header.setAttribute('class', 'header header_blur')
+	
+	header.setAttribute('class', 'header header_blur');
+	
 	close_but.setAttribute('class', 'head_close');
 	setTimeout(()=> {
 		view_1.setAttribute('class', 'head_view_1');
 	}, 200);
 	setTimeout(()=> {
 		view_2.setAttribute('class', 'head_view_2');
+		header_mass_views.setAttribute('class', 'header_massage_views');
 	}, 400);
 	setTimeout(()=>{
 		view_3.setAttribute('class', 'head_view_3');
@@ -98,15 +100,15 @@ function head_mass_show() {
 function close_views() {
 	view_3.setAttribute('class', 'head_v_opac_3');
 	console.log('1');
-	setTimeout(()=> {
+	setTimeout(function() {
 		view_2.setAttribute('class', 'head_v_opac_2');
 		console.log('2')
 	}, 200);
-	setTimeout(()=> {
+	setTimeout(function() {
 		view_1.setAttribute('class', 'head_v_opac_1');
 		console.log('3')
 	}, 400);
-	setTimeout(()=>{
+	setTimeout(function(){
 		header_mass_views.setAttribute('class', 'hidden_views');
 		close_but.setAttribute('class', 'head_close_opac');
 		header.setAttribute('class', 'header');
