@@ -22,9 +22,9 @@ window.addEventListener('scroll', function() {
   let scroll_proc = document.getElementById('scroll_proc');
   scroll_proc.innerHTML = scroll_procent;
   console.log(scroll_procent);
-  if (scroll_procent > 15){
+  if (scroll_procent > 26){
   	button_up.setAttribute('class', 'button_up');	
-  } else if (scroll_procent < 15) {
+  } else if (scroll_procent < 26) {
   	button_up.setAttribute('class', 'hidden');	
   }
 });

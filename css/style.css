@@ -140,6 +140,15 @@ body {
   100% {filter: blur(0);}
 }
 
+@keyframes show_arrow {
+  0% {transform: scale(2) box-shadow: 10px 10px 10px 10px;}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1) box-shadow: 10px 10px 10px 10px;;}
+}
+
+
+
+
 
 .slide_anim_1{
   animation: rotate 0.7s linear ;
@@ -414,6 +423,7 @@ body {
   top: 50%;
   left: 85%;
   cursor: pointer;  
+  animation: show_arrow 0.5s linear;
 }
 
 .button_right:before, .button_right:after {
@@ -472,13 +482,12 @@ body {
 }
 
 .button_up {
-
   top: 5%;
   left: 48%;
   right: 48%;
   z-index: 2;
   /*position: fixed;*/
-  animation: rotate 1s linear;
+  
 }
 
 .button_up:before, .button_up:after {
