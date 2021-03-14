@@ -30,7 +30,7 @@ window.addEventListener('scroll', function() {
   if (scroll_procent > 31){
   	button_left.setAttribute('class', 'button_left');
   	button_right.setAttribute('class', 'button_right');	
-  } else if (scroll_procent < 26) {
+  } else if (scroll_procent < 31) {
     button_left.setAttribute('class', 'button_up_hide');
   	button_right.setAttribute('class', 'button_up_hide');
   }
