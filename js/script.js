@@ -1,14 +1,14 @@
 "use strict";
 
 let header = document.getElementById('header');
-let button_right = document.getElementById('button_right');
-let button_left = document.getElementById('button_left');
 let massage_view = document.getElementById('massage_view');
 let desc_head = document.getElementById('desc_head');
 let desc_text = document.getElementById('desc_text');
 let img = document.getElementById('desc_img');
 let header_mass_views = document.getElementById('header_mass_views');
 let about_me = document.getElementById('about_me');
+let button_right = document.getElementById('button_right');
+let button_left = document.getElementById('button_left');
 let button_up = document.getElementById('button_up');
 let view_1 = document.getElementById('head_view_1');
 let	view_2 = document.getElementById('head_view_2');
@@ -24,11 +24,22 @@ window.addEventListener('scroll', function() {
   console.log(scroll_procent);
   if (scroll_procent > 26){
   	button_up.setAttribute('class', 'button_up');
-
   } else if (scroll_procent < 26 && button_up.className === 'button_up') {
   	button_up.setAttribute('class', 'button_up_hide');
   	setTimeout(()=>{
   	  button_up.setAttribute('class', 'hidden');	
+  	}, 400);	
+  } 
+
+  if (scroll_procent >= 31) {
+    button_right.setAttribute('class', 'button_right');
+    button_left.setAttribute('class', 'button_left');
+  }  else if (scroll_procent < 22 && button_right.className === 'button_right' && button_left.className === 'button_left') {
+    button_right.setAttribute('class', 'button_right_hide');
+    button_left.setAttribute('class', 'button_left_hide');
+  	setTimeout(()=>{
+  	  button_right.setAttribute('class', 'hidden');
+  	  button_left.setAttribute('class', 'hidden');	
   	}, 400);	
   }
 });

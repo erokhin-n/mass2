@@ -433,19 +433,6 @@ body {
   animation: show_arrow 0.5s linear;
 }
 
-.button_left {
-  width: 50px;
-  height: 50px;
-  /*background-color: grey;*/
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 85%;
-  cursor: pointer;  
-  animation: show_arrow 0.5s linear;
-}
-
-
 .button_right:before, .button_right:after {
   content: ' ';
   position: absolute;
@@ -471,12 +458,52 @@ body {
   top: 105%;
 }
 
-/*.right_arrow {
-  background-color: radial-gradient(#fff, #BFE2FF);
-}*/
+.button_right_hide {
+  width: 50px;
+  height: 50px;
+  /*background-color: grey;*/
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  cursor: pointer;  
+  animation: arrow_hide 0.5s linear;
+}
+
+.button_right_hide:before, .button_right_hide:after {
+  content: ' ';
+  position: absolute;
+  /*transform: rotate(45deg);*/
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100px;
+  height: 10px;
+  display: block;
+  border-radius: 10px;
+  /*box-shadow: 0px 0px 13px 7px #fff;*/
+}
+
+.button_right_hide:before {
+  transform: rotate(60deg);
+  right: 2%;
+/*top: -133%;*/
+  bottom: 133%;
+}
+
+.button_right_hide:after {
+  transform: rotate(-60deg);
+  right: 2%;
+  top: 105%;
+}
 
 .button_left {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
   left: 9%;
+  cursor: pointer;  
+  animation: show_arrow 0.5s linear;
 }
 
 .button_left:before, .button_left:after {
@@ -499,6 +526,42 @@ body {
 }
 
 .button_left:after {
+  transform: rotate(60deg);
+  top: 109%;
+  left: 2%;
+}
+
+.button_left_hide {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  cursor: pointer;  
+  animation: arrow_hide 0.5s linear;
+}
+
+.button_left_hide:before, .button_left_hide:after {
+  content: ' ';
+  position: absolute;
+  /*transform: rotate(45deg);*/
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100px;
+  height: 10px;
+  display: block;
+  border-radius: 10px;
+  /*box-shadow: 0px 0px 13px 7px #808080;*/
+}
+
+.button_left_hide:before {
+  transform: rotate(-60deg);
+  left: 2%;
+/*top: -133%;*/
+  bottom: 129%;
+}
+
+.button_left_hide:after {
   transform: rotate(60deg);
   top: 109%;
   left: 2%;
@@ -578,7 +641,6 @@ body {
   top: 83%;
   left: 41%;
 }
-
 
 /*обо мне*/
 .about_me_1 {
