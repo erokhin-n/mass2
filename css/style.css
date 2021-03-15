@@ -620,6 +620,10 @@ body {
   left: 41%;
 }
 
+.button_up:before:hover {
+  background-color: #fff;
+}
+
 /*обо мне*/
 .about_me_1 {
   min-width: 100%;
