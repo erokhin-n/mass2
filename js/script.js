@@ -21,10 +21,11 @@ window.addEventListener('scroll', function() {
   let scroll_procent = Math.floor((scroll_px / scroll_height) * 100);
   let scroll_proc = document.getElementById('scroll_proc');
   scroll_proc.innerHTML = scroll_procent;
+
   console.log(scroll_procent);
-  if (scroll_procent > 26){
+  if (scroll_procent > 30){
   	button_up.setAttribute('class', 'button_up');
-  } else if (scroll_procent < 26 && button_up.className === 'button_up') {
+  } else if (scroll_procent < 30 && button_up.className === 'button_up') {
   	button_up.setAttribute('class', 'button_up_hide');
   	setTimeout(()=>{
   	  button_up.setAttribute('class', 'hidden');	
