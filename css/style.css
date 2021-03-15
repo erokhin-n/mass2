@@ -243,13 +243,13 @@ body {
   /*animation: rotate 0.4s linear;*/
 }
 
-.head_close:hover {
+.head_view:hover, .head_close:hover {
   transition: 0.4s;
   transform: scale(1.2);
   /*background: linear-gradient(to right, #fff, #000);*/
 }
 
-.head_close:active {
+.head_view:active, .head_close:active {
   transition: 0.4s;
   /*transform: scale(2);*/
   background-color: #808080;
@@ -277,7 +277,7 @@ body {
   transform: rotate(-45deg);
 }
 
-.head_v_opac_1, .head_v_opac_2, .head_v_opac_3, .head_close_opac {
+.head_v_opac, .head_close_opac {
   color: #fff;
   display: grid;
   min-width: 100%;
@@ -405,7 +405,7 @@ body {
   content: ' ';
   position: absolute;
   /*transform: rotate(45deg);*/
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100px;
   height: 10px;
   display: block;
@@ -442,7 +442,7 @@ body {
   content: ' ';
   position: absolute;
   /*transform: rotate(45deg);*/
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100px;
   height: 10px;
   display: block;
@@ -478,7 +478,7 @@ body {
   content: ' ';
   position: absolute;
   /*transform: rotate(45deg);*/
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100px;
   height: 10px;
   display: block;
@@ -514,7 +514,7 @@ body {
   content: ' ';
   position: absolute;
   /*transform: rotate(45deg);*/
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100px;
   height: 10px;
   display: block;
@@ -552,7 +552,7 @@ body {
   content: ' ';
   position: absolute;
   /*transform: rotate(45deg);*/
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100px;
   height: 10px;
   display: block;
@@ -590,7 +590,7 @@ body {
 .button_up_hide:before, .button_up_hide:after {
   content: ' ';
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100px;
   height: 10px;
   display: block;

@@ -116,15 +116,15 @@ function head_mass_show() {
 }
 
 function close_views() {
-	view_3.setAttribute('class', 'head_v_opac_3');
+	view_3.setAttribute('class', 'head_v_opac');
 	header_mass_views.setAttribute('class', 'head_mass_down');
 	// console.log('1');
 	setTimeout(()=> {
-		view_2.setAttribute('class', 'head_v_opac_2');
+		view_2.setAttribute('class', 'head_v_opac');
 		// console.log('2')
 	}, 200);
 	setTimeout(()=> {
-		view_1.setAttribute('class', 'head_v_opac_1');
+		view_1.setAttribute('class', 'head_v_opac');
 		// header_mass_views.setAttribute('class', 'header_massage_views_opac')
 		// console.log('3')
 	}, 400);
