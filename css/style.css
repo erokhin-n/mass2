@@ -214,7 +214,7 @@ body {
   color: rgba(0, 0, 0, 0);
 }
 
-.head_view_1, .head_view_2, .head_view_3, .head_close {
+.head_view, .head_close {
   color: #fff;
   display: grid;
   min-width: 100%;

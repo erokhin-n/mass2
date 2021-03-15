@@ -104,14 +104,14 @@ function head_mass_show() {
 	
 	close_but.setAttribute('class', 'head_close');
 	setTimeout(()=> {
-		view_1.setAttribute('class', 'head_view_1');
+		view_1.setAttribute('class', 'head_view');
 	}, 200);
 	setTimeout(()=> {
-		view_2.setAttribute('class', 'head_view_2');
+		view_2.setAttribute('class', 'head_view');
 		header_mass_views.setAttribute('class', 'header_massage_views');
 	}, 400);
 	setTimeout(()=>{
-		view_3.setAttribute('class', 'head_view_3');
+		view_3.setAttribute('class', 'head_view');
 	}, 600);
 }
 
