@@ -231,6 +231,7 @@ body {
   /*filter: none;*/
   padding: 0 30px 0 30px;
   animation: visible 0.4s linear;
+  transition: 0.5s;
 }
 
 .head_close {
@@ -240,6 +241,18 @@ body {
   display: grid;
   justify-content: start;
   /*animation: rotate 0.4s linear;*/
+}
+
+.head_close:hover {
+  transition: 0.4s;
+  transform: scale(1.2);
+  /*background: linear-gradient(to right, #fff, #000);*/
+}
+
+.head_close:active {
+  transition: 0.4s;
+  /*transform: scale(2);*/
+  background-color: #808080;
 }
 
 .cross {
@@ -283,13 +296,6 @@ body {
   animation: disappear 0.5s linear;
 }
 
-
-
-/*.header_menu {
-  grid-row: 2/3;
-  grid-column: 4/7;
-}
-*/
 .header_list {
   display: grid;
   grid-template: repeat(4, 1fr) / 1fr;
