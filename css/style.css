@@ -337,11 +337,11 @@ body {
   min-height: 100vh;
 }
 
-/*.hidden {
+.hidden {
   display: none;  
-  animation: change_color 1s;
+  /*animation: change_color 1s;*/
 }
-*/
+
 .hidden_views {
   position: absolute;
   min-height: 80vh;
@@ -421,7 +421,7 @@ body {
 }
 
 
-.button_right, .button_left, .button_up {
+.button_right {
   width: 50px;
   height: 50px;
   /*background-color: grey;*/
@@ -432,6 +432,19 @@ body {
   cursor: pointer;  
   animation: show_arrow 0.5s linear;
 }
+
+.button_left {
+  width: 50px;
+  height: 50px;
+  /*background-color: grey;*/
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  cursor: pointer;  
+  animation: show_arrow 0.5s linear;
+}
+
 
 .button_right:before, .button_right:after {
   content: ' ';
@@ -492,12 +505,17 @@ body {
 }
 
 .button_up {
+  width: 50px;
+  height: 50px;
+  /*background-color: grey;*/
+  border-radius: 50%;
+  position: absolute;
   top: 5%;
   left: 48%;
   right: 48%;
+  cursor: pointer;  
+  animation: show_arrow 0.5s linear;
   z-index: 2;
-  /*position: fixed;*/
-  
 }
 
 .button_up:before, .button_up:after {
@@ -527,27 +545,38 @@ body {
 }
 
 .button_up_hide {
-  content: ' ';
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   position: absolute;
-  /*transform: rotate(45deg);*/
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100px;
-  height: 10px;
-  visibility: hidden;
-  border-radius: 10px;
-  animation: arrow_hide 1s linear;
+  top: 5%;
+  left: 48%;
+  right: 48%;
+  cursor: pointer;  
+  animation: arrow_hide 0.5s linear;
+  z-index: 2;
 }
 
-.button_up:before, .button_up:after {
+.button_up_hide:before, .button_up_hide:after {
   content: ' ';
   position: absolute;
-  /*transform: rotate(45deg);*/
   background-color: rgba(0, 0, 0, 0.5);
   width: 100px;
   height: 10px;
   display: block;
   border-radius: 10px;
-  /*box-shadow: 0px 0px 13px 7px #808080;*/
+}
+
+.button_up_hide:before {
+  transform: rotate(-30deg);
+  top: 83%;
+  right: 18%;
+}
+
+.button_up_hide:after {
+  transform: rotate(30deg);
+  top: 83%;
+  left: 41%;
 }
 
 

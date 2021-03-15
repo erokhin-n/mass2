@@ -23,9 +23,13 @@ window.addEventListener('scroll', function() {
   scroll_proc.innerHTML = scroll_procent;
   console.log(scroll_procent);
   if (scroll_procent > 26){
-  	button_up.setAttribute('class', 'button_up');	
-  } else if (scroll_procent < 26) {
-  	button_up.setAttribute('class', 'button_up_hide');	
+  	button_up.setAttribute('class', 'button_up');
+
+  } else if (scroll_procent < 26 && button_up.className === 'button_up') {
+  	button_up.setAttribute('class', 'button_up_hide');
+  	setTimeout(()=>{
+  	  button_up.setAttribute('class', 'hidden');	
+  	}, 400);	
   }
 });
 
