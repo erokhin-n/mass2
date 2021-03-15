@@ -620,8 +620,21 @@ body {
   left: 41%;
 }
 
-.button_up:before:hover {
-  background-color: #fff;
+.button_up:hover:before, .button_up:hover:after {
+  transition: 0.4s;
+  transform: scale(1.8);
+  background-color: #000;
+}
+
+.button_up:hover:before {
+  transform: rotate(-30deg) scale(1.2);
+  /*left: 48%; */
+}
+
+.button_up:hover:after {
+  transform: rotate(30deg) scale(1.2);
+  left: 63%;
+
 }
 
 /*обо мне*/
