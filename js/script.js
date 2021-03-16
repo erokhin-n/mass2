@@ -14,6 +14,7 @@ let view_1 = document.getElementById('head_view_1');
 let	view_2 = document.getElementById('head_view_2');
 let	view_3 = document.getElementById('head_view_3');
 let close_but = document.getElementById('close_but');
+let contacts = document.getElementById('contacts');
 
 window.addEventListener('scroll', function() {
   let scroll_px = document.documentElement.scrollTop;
@@ -99,9 +100,7 @@ function left_click() {
 }
  
 function head_mass_show() {
-	
 	header.setAttribute('class', 'header header_blur');
-	
 	close_but.setAttribute('class', 'head_close');
 	setTimeout(()=> {
 		view_1.setAttribute('class', 'head_view');
@@ -152,4 +151,8 @@ function scroll_to_view(event) {
     case "обо мне":
       about_me.scrollIntoView({behavior: "smooth"});    
   }
+}
+
+function show_contact() {
+  header.setAttribute('class', 'header header_blur');
 }

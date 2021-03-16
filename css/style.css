@@ -751,3 +751,68 @@ body {
   background-color: #7b3f00;
   box-shadow: 0px 1px 16px 4px #000
 }
+
+.contacts {
+  position: absolute;
+  color: #fff;
+  display: grid;
+  max-width: 50%;
+  max-height: 50%;
+  font-size: 45px;
+  border-radius: 10px;
+  cursor: pointer; 
+  /*background-color: #fff;*/
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-self: center;
+  /*padding: 15% 0 0 0;*/
+  align-content: center;
+  filter: 0px;
+  /*filter: none;*/
+  padding: 0 30px 0 30px;
+  animation: visible 0.4s linear;
+  transition: 0.5s;
+  bottom: 145%;
+  left: 34%;
+}
+
+.close_cont {
+  color: #fff;
+  display: grid;
+  min-width: 100%;
+  max-height: 50%;
+  font-size: 45px;
+  border-radius: 10px;
+  cursor: pointer; 
+  /*background-color: #fff;*/
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-self: center;
+  /*padding: 15% 0 0 0;*/
+  align-content: center;
+  filter: 0px;
+  /*filter: none;*/
+  padding: 0 30px 0 30px;
+  animation: visible 0.4s linear;
+  transition: 0.5s;
+}
+
+.cross_cont {
+  width: 10%;
+  height: 5px;
+  justify-self: end;
+}
+
+.cross_cont:before, .cross_cont:after {
+  content: ' ';
+  height: 1px;
+  width: 45px;
+  background-color: #fff;
+  display: block;
+}
+
+.cross_cont:before {
+  transform: rotate(45deg);
+}
+
+.cross_cont:after {
+  transform: rotate(-45deg);
+}

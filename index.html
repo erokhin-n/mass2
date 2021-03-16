@@ -15,7 +15,7 @@
 				<li><div class="menu_link menu_heading">НАЗВАНИЕ САЙТА </div></li>
 				<li><div class="menu_link" onclick = 'head_mass_show()'>виды массажа</div></li>
 				<li><div class="menu_link" onclick='scroll_to_view(event)'>обо мне</div></li>
-				<li><div class="menu_link">контакты</div></li>
+				<li><div class="menu_link" onclick = 'show_contact()'>контакты</div></li>
 			</ul>
 		</nav>
 	</header>
@@ -27,6 +27,8 @@
 			  <div class="hidden" onclick='scroll_to_view(event)' id = "head_view_2">второй вид массажа</div>
 			  <div class="hidden" onclick='scroll_to_view(event)' id = "head_view_3">третий вид массажа</div>
 		  </div>
+		  <div class="close_cont" onclick = 'close_cont()' id= "close_cont"><span class="cross_cont"></span></div>
+		  <div class="contacts" id = 'contacts'>8 926 983 87 60</div>
 			<div class="hidden" id="button_up" onclick="scroll_up()">
 			</div>
 			<div class="massage_view" id="massage_view">
@@ -37,7 +39,6 @@
 				</div>
 				<div class="desc_img img_1" id="desc_img"></div>
 				<div class="hidden" id="button_right" onclick='right_click()'>
-				  
 				</div>
 				<div class="hidden" id="button_left" onclick='left_click()'></div>
 			</div>
