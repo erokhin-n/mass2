@@ -490,6 +490,21 @@ body {
   top: 116%;
 }
 
+.button_right:active:before, .button_right:active:after {
+  transition: 0.4s;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.button_right:active:before {
+  transform: rotate(50deg) scale(1.2);
+  bottom: 147%;
+}
+
+.button_right:active:after {
+  transform: rotate(-50deg) scale(1.2);
+  top: 107%;
+}
+
 .button_left {
   width: 50px;
   height: 50px;
@@ -577,6 +592,21 @@ body {
 .button_left:hover:after {
   transform: rotate(60deg) scale(1.2);
   top: 116%;
+}
+
+.button_left:active:before, .button_left:active:after {
+  transition: 0.4s;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.button_left:active:before {
+  transform: rotate(-50deg) scale(1.2);
+  bottom: 147%;
+}
+
+.button_left:active:after {
+  transform: rotate(50deg) scale(1.2);
+  top: 107%;
 }
 
 .button_up {
@@ -670,6 +700,21 @@ body {
   left: 56%;
 }
 
+.button_up:active:before, .button_up:active:after {
+  transition: 0.4s;
+  /*transform: scale(1.8);*/
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.button_up:active:before {
+  transform: rotate(-40deg) scale(1.2);
+  right: 24%;
+}
+
+.button_up:active:after {
+  transform: rotate(40deg) scale(1.2);
+  left: 45%;
+}
 /*обо мне*/
 .about_me_1 {
   min-width: 100%;
