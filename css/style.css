@@ -757,7 +757,7 @@ body {
   color: #fff;
   display: grid;
   max-width: 50%;
-  max-height: 50%;
+  min-height: 11%;
   font-size: 45px;
   border-radius: 10px;
   cursor: pointer; 
@@ -775,11 +775,34 @@ body {
   left: 34%;
 }
 
-.close_cont {
+.contacts_opac {
+    position: absolute;
   color: #fff;
   display: grid;
-  max-width: 30%;
-  max-height: 20%;
+  max-width: 50%;
+  min-height: 11%;
+  font-size: 45px;
+  border-radius: 10px;
+  cursor: pointer; 
+  /*background-color: #fff;*/
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-self: center;
+  /*padding: 15% 0 0 0;*/
+  align-content: center;
+  filter: 0px;
+  /*filter: none;*/
+  padding: 0 30px 0 30px;
+  animation: disappear 0.4s linear;
+  transition: 0.5s;
+  bottom: 145%;
+  left: 34%;
+}
+
+.close_cont {
+  color: #fff;
+  /*display: grid;*/
+  min-width: 7%;
+  min-height: 10%;
   font-size: 45px;
   border-radius: 10px;
   cursor: pointer; 
@@ -794,8 +817,31 @@ body {
   animation: visible 0.4s linear;
   transition: 0.5s;
   position: absolute;
-  top: 20%;
-  left: 20%
+  left: 57%;
+  bottom: 163%;
+}
+
+.close_cont_opac {
+  color: #fff;
+  /*display: grid;*/
+  min-width: 7%;
+  min-height: 10%;
+  font-size: 45px;
+  border-radius: 10px;
+  cursor: pointer; 
+  /*background-color: #fff;*/
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-self: center;
+  /*padding: 15% 0 0 0;*/
+  align-content: center;
+  filter: 0px;
+  /*filter: none;*/
+  padding: 0 30px 0 30px;
+  animation: disappear 0.4s linear;
+  transition: 0.5s;
+  position: absolute;
+  left: 57%;
+  bottom: 163%;
 }
 
 .cross_cont {
@@ -810,6 +856,9 @@ body {
   width: 45px;
   background-color: #fff;
   display: block;
+  top: 47%;
+  left: 28%;
+  position: absolute;
 }
 
 .cross_cont:before {

@@ -15,6 +15,7 @@ let	view_2 = document.getElementById('head_view_2');
 let	view_3 = document.getElementById('head_view_3');
 let close_but = document.getElementById('close_but');
 let contacts = document.getElementById('contacts');
+let close_cont = document.getElementById('close_cont');
 
 window.addEventListener('scroll', function() {
   let scroll_px = document.documentElement.scrollTop;
@@ -155,4 +156,16 @@ function scroll_to_view(event) {
 
 function show_contact() {
   header.setAttribute('class', 'header header_blur');
+  contacts.setAttribute('class', 'contacts');
+  close_cont.setAttribute('class', 'close_cont');
+}
+
+function close_contact(){
+	header.setAttribute('class', 'header header_no_blur');
+	contacts.setAttribute('class', 'contacts_opac');
+	close_cont.setAttribute('class', 'close_cont_opac');
+	setTimeout(()=>{
+	  contacts.setAttribute('class', 'hidden');
+	  close_cont.setAttribute('class', 'hidden');
+	}, 400)
 }
