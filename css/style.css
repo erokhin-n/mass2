@@ -778,8 +778,8 @@ body {
 .close_cont {
   color: #fff;
   display: grid;
-  min-width: 100%;
-  max-height: 50%;
+  max-width: 30%;
+  max-height: 20%;
   font-size: 45px;
   border-radius: 10px;
   cursor: pointer; 
@@ -793,6 +793,9 @@ body {
   padding: 0 30px 0 30px;
   animation: visible 0.4s linear;
   transition: 0.5s;
+  position: absolute;
+  top: 20%;
+  left: 20%
 }
 
 .cross_cont {
