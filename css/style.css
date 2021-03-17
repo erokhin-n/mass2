@@ -878,8 +878,23 @@ body {
   transform: rotate(-45deg);
 }
 
-@media (min-width: 320px) {
+@media (min-width: 319px) and (max-width: 767px) {
   .menu_link {
     font-size: 90px;
+    color: yellow;
+  }
+}
+
+/*@media (max-width: 767px) {
+  .menu_link {
+    font-size: 48px;
+    color: red;
+  }
+}*/
+
+@media(min-width: 992px) and (max-width: 1400px) {
+  .menu_link {
+    font-size: 48px;
+    color: green;
   }
 }
