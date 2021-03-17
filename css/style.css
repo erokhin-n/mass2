@@ -196,6 +196,7 @@ body {
   left: 18%;
   color: rgba(0, 0, 0, 0);
   animation: up_head_views 0.5s linear;
+  z-index: 10;
 }
 
 .head_mass_down {
@@ -360,6 +361,14 @@ body {
 
 .massage_list {
   position: absolute;
+}
+
+.cover_curtain {
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 1;
 }
 
 .description_cont {

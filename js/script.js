@@ -16,6 +16,7 @@ let	view_3 = document.getElementById('head_view_3');
 let close_but = document.getElementById('close_but');
 let contacts = document.getElementById('contacts');
 let close_cont = document.getElementById('close_cont');
+let curtain = document.getElementById('curtain');
 
 window.addEventListener('scroll', function() {
   let scroll_px = document.documentElement.scrollTop;
@@ -103,6 +104,7 @@ function left_click() {
 function head_mass_show() {
 	header.setAttribute('class', 'header header_blur');
 	close_but.setAttribute('class', 'head_close');
+	cover_curtain();
 	setTimeout(()=> {
 		view_1.setAttribute('class', 'head_view');
 	}, 200);
@@ -132,6 +134,7 @@ function close_views() {
 		close_but.setAttribute('class', 'head_close_opac');
 		header_mass_views.setAttribute('class', 'hidden_views');
 		header.setAttribute('class', 'header header_no_blur');
+		cover_curtain_hide();
 		// console.log('4');
 	}, 600);
 }
@@ -158,6 +161,7 @@ function show_contact() {
   header.setAttribute('class', 'header header_blur');
   contacts.setAttribute('class', 'contacts');
   close_cont.setAttribute('class', 'close_cont');
+  cover_curtain();
 }
 
 function close_contact(){
@@ -167,5 +171,14 @@ function close_contact(){
 	setTimeout(()=>{
 	  contacts.setAttribute('class', 'hidden');
 	  close_cont.setAttribute('class', 'hidden');
+	  cover_curtain_hide();
 	}, 400)
+}
+
+function cover_curtain() {
+  curtain.setAttribute('class', 'cover_curtain');
+}
+
+function cover_curtain_hide() {
+	curtain.setAttribute('class', 'hidden');
 }
