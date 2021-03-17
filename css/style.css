@@ -878,22 +878,69 @@ body {
   transform: rotate(-45deg);
 }
 
-@media (max-device-width: 320px) {
+@media (min-device-width: 320px) and (max-device-width: 1023px) {
+  .menu_heading {
+    font-size: 80px;
+  }
   .menu_link {
     font-size: 90px;
-    color: yellow;
+  }
+  .menu_heading:hover {
+    font-size: 80px;
   }
   .massage_view {
-    grid-template: 2fr  / 1fr;
+    grid-template: 1fr 1fr  / 1fr;
+  }
+  .description_cont {
+    grid-template: 20% 80% / 1fr;
+  }
+  .description_heading {
+    font-size: 76px;
+    align-self: center;
+  }
+  .description_text {
+    font-size: 52px;
+  }
+  .about_me_1 {
+    grid-template: 1fr 1fr/ 1fr;
+    grid-template-areas: 
+      "ab-cont"
+      "ab_me_img"
+  }
+  .about_img_cont {
+    grid-area: ab_me_img;
+  }
+  .about_cont {
+    grid-area: ab-cont;
+    display: grid;
+    grid-template: 20% 80% / 1fr;
+  }
+  .about_heading {
+    font-size: 89px;
+    align-self: center;
+  }
+  .about_text {
+    font-size: 58px;
+  }
+  .close_cont {
+    min-height: 11%;
+    font-size: 53px;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 24%;
+    left: 64%;
+  }
+  .contacts {
+    min-width: 100%;
+    left: 0;
+    font-size: 108px;
   }
 }
 
-@media (max-device-width: 768px) {
+/*@media (max-device-width: 768px) {
   .menu_link {
-    /*font-size: ;*/
   color: red;
   }
-}
+}*/
 
 /*@media (max-width: 767px) {
   .menu_link {
@@ -902,9 +949,9 @@ body {
   }
 }*/
 
-@media(min-width: 992px) and (max-width: 1400px) {
+/*@media(min-width: 992px) and (max-width: 1400px) {
   .menu_link {
     font-size: 48px;
     color: green;
   }
-}
+}*/
