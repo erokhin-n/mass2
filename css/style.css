@@ -877,3 +877,13 @@ body {
 .cross_cont:after {
   transform: rotate(-45deg);
 }
+
+@media (min-width: 320px) {
+  .menu_link {
+    font-size: 90px;
+
+  }
+  .header_list li div {
+    font-size: 90px
+  }
+}
