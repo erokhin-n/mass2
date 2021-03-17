@@ -878,10 +878,20 @@ body {
   transform: rotate(-45deg);
 }
 
-@media (min-width: 319px) and (max-width: 767px) {
+@media (max-device-width: 320px) {
   .menu_link {
     font-size: 90px;
     color: yellow;
+  }
+  .massage_view {
+    grid-template: 2fr  / 1fr;
+  }
+}
+
+@media (max-device-width: 768px) {
+  .menu_link {
+    /*font-size: ;*/
+  color: red;
   }
 }
 
