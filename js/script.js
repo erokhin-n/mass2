@@ -6,7 +6,7 @@ let desc_head = document.getElementById('desc_head');
 let desc_text = document.getElementById('desc_text');
 let img = document.getElementById('desc_img');
 let header_mass_views = document.getElementById('header_mass_views');
-let about_me = document.getElementById('about_me');
+let about_sect = document.getElementById('about_sect');
 let button_right = document.getElementById('button_right');
 let button_left = document.getElementById('button_left');
 let button_up = document.getElementById('button_up');
@@ -17,6 +17,7 @@ let close_but = document.getElementById('close_but');
 let contacts = document.getElementById('contacts');
 let close_cont = document.getElementById('close_cont');
 let curtain = document.getElementById('curtain');
+let massage_sect = document.getElementById('massage_sect');
 
 window.addEventListener('scroll', function() {
   let scroll_px = document.documentElement.scrollTop;
@@ -140,7 +141,7 @@ function close_views() {
 }
 
 function scroll_to_view(event) {
-  img.scrollIntoView({behavior: "smooth"});
+  massage_sect.scrollIntoView({behavior: "smooth"});
   let click_event = event.target;
   switch (click_event.textContent){
     case "первый вид массажа":
@@ -153,7 +154,7 @@ function scroll_to_view(event) {
       slide_3();
       break; 
     case "обо мне":
-      about_me.scrollIntoView({behavior: "smooth"});    
+      about_sect.scrollIntoView({behavior: "smooth"});    
   }
 }
 
@@ -182,5 +183,7 @@ function cover_curtain() {
 function cover_curtain_hide() {
 	curtain.setAttribute('class', 'hidden');
 }
+
+
 
 
