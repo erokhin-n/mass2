@@ -157,7 +157,7 @@ function scroll_to_view(event) {
   //     break; 
   //   case "обо мне":
   //     about_sect.scrollIntoView({behavior: "smooth"});    
-  // }
+  }
 }
 
 function show_contact() {
