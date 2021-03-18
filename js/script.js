@@ -144,19 +144,19 @@ function close_views() {
 function scroll_to_view(event) {
   massage_view.scrollIntoView({behavior: "smooth"});
   let click_event = event.target;
-  switch (click_event.textContent){
-    case "первый вид массажа":
-      slide_1();
-      break;
-    case "второй вид массажа":
-      slide_2();
-      break; 
-    case "третий вид массажа":
-      slide_3();
-      break; 
-    case "обо мне":
-      about_sect.scrollIntoView({behavior: "smooth"});    
-  }
+  // switch (click_event.textContent){
+  //   case "первый вид массажа":
+  //     slide_1();
+  //     break;
+  //   case "второй вид массажа":
+  //     slide_2();
+  //     break; 
+  //   case "третий вид массажа":
+  //     slide_3();
+  //     break; 
+  //   case "обо мне":
+  //     about_sect.scrollIntoView({behavior: "smooth"});    
+  // }
 }
 
 function show_contact() {
