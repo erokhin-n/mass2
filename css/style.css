@@ -810,7 +810,7 @@ body {
 .close_cont {
   color: #fff;
   /*display: grid;*/
-  min-width: 7%;
+  min-width: 10%;
   min-height: 10%;
   font-size: 45px;
   border-radius: 10px;
@@ -939,6 +939,10 @@ body {
     min-width: 100%;
     left: 0;
     font-size: 108px;
+  }
+  .cross_cont:before, .cross_cont:after {
+    height: 10px;
+    width: 103px;
   }
 }
 
