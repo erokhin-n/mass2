@@ -785,7 +785,7 @@ body {
 }
 
 .contacts_opac {
-    position: absolute;
+  position: absolute;
   color: #fff;
   display: grid;
   max-width: 50%;
@@ -930,6 +930,11 @@ body {
     left: 64%;
   }
   .contacts {
+    min-width: 100%;
+    left: 0;
+    font-size: 108px;
+  }
+  .contacts_opac {
     min-width: 100%;
     left: 0;
     font-size: 108px;
