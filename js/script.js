@@ -13,6 +13,7 @@ let button_up = document.getElementById('button_up');
 let view_1 = document.getElementById('head_view_1');
 let	view_2 = document.getElementById('head_view_2');
 let	view_3 = document.getElementById('head_view_3');
+let contact_cont = document.getElementById('contact_cont');
 let close_but = document.getElementById('close_but');
 let contacts = document.getElementById('contacts');
 let close_cont = document.getElementById('close_cont');
@@ -141,7 +142,7 @@ function close_views() {
 }
 
 function scroll_to_view(event) {
-  massage_sect.scrollIntoView({behavior: "smooth"});
+  massage_view.scrollIntoView({behavior: "smooth"});
   let click_event = event.target;
   switch (click_event.textContent){
     case "первый вид массажа":
