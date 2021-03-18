@@ -20,35 +20,35 @@ let close_cont = document.getElementById('close_cont');
 let curtain = document.getElementById('curtain');
 let massage_sect = document.getElementById('massage_sect');
 
-// window.addEventListener('scroll', function() {
-//   let scroll_px = document.documentElement.scrollTop;
-//   let scroll_height = document.documentElement.scrollHeight;
-//   let scroll_procent = Math.floor((scroll_px / scroll_height) * 100);
-//   let scroll_proc = document.getElementById('scroll_proc');
-//   scroll_proc.innerHTML = scroll_procent;
+window.addEventListener('scroll', function() {
+  let scroll_px = document.documentElement.scrollTop;
+  let scroll_height = document.documentElement.scrollHeight;
+  let scroll_procent = Math.floor((scroll_px / scroll_height) * 100);
+  let scroll_proc = document.getElementById('scroll_proc');
+  scroll_proc.innerHTML = scroll_procent;
 
   // console.log(scroll_procent);
-  // if (scroll_procent > 30){
-  // 	button_up.setAttribute('class', 'button_up');
-  // } else if (scroll_procent < 30 && button_up.className === 'button_up') {
-  // 	button_up.setAttribute('class', 'button_up_hide');
-  // 	setTimeout(()=>{
-  // 	  button_up.setAttribute('class', 'hidden');	
-  // 	}, 400);	
-  // } 
+  if (scroll_procent > 30){
+  	button_up.setAttribute('class', 'button_up');
+  } else if (scroll_procent < 30 && button_up.className === 'button_up') {
+  	button_up.setAttribute('class', 'button_up_hide');
+  	setTimeout(()=>{
+  	  button_up.setAttribute('class', 'hidden');	
+  	}, 400);	
+  } 
 
-//   if (scroll_procent >= 31) {
-//     button_right.setAttribute('class', 'button_right');
-//     button_left.setAttribute('class', 'button_left');
-//   }  else if (scroll_procent < 22 && button_right.className === 'button_right' && button_left.className === 'button_left') {
-//     button_right.setAttribute('class', 'button_right_hide');
-//     button_left.setAttribute('class', 'button_left_hide');
-//   	setTimeout(()=>{
-//   	  button_right.setAttribute('class', 'hidden');
-//   	  button_left.setAttribute('class', 'hidden');	
-//   	}, 400);	
-//   }
-// });
+  if (scroll_procent >= 31) {
+    button_right.setAttribute('class', 'button_right');
+    button_left.setAttribute('class', 'button_left');
+  }  else if (scroll_procent < 22 && button_right.className === 'button_right' && button_left.className === 'button_left') {
+    button_right.setAttribute('class', 'button_right_hide');
+    button_left.setAttribute('class', 'button_left_hide');
+  	setTimeout(()=>{
+  	  button_right.setAttribute('class', 'hidden');
+  	  button_left.setAttribute('class', 'hidden');	
+  	}, 400);	
+  }
+});
 
 function scroll_up() {
 	header.scrollIntoView({behavior: "smooth"});
@@ -143,20 +143,20 @@ function close_views() {
 
 function scroll_to_view(event) {
   massage_view.scrollIntoView({behavior: "smooth"});
-  // let click_event = event.target;
-  // switch (click_event.textContent){
-  //   case "первый вид массажа":
-  //     slide_1();
-  //     break;
-  //   case "второй вид массажа":
-  //     slide_2();
-  //     break; 
-  //   case "третий вид массажа":
-  //     slide_3();
-  //     break; 
-  //   case "обо мне":
-  //     about_sect.scrollIntoView({behavior: "smooth"});    
-  // }
+  let click_event = event.target;
+  switch (click_event.textContent){
+    case "первый вид массажа":
+      slide_1();
+      break;
+    case "второй вид массажа":
+      slide_2();
+      break; 
+    case "третий вид массажа":
+      slide_3();
+      break; 
+    case "обо мне":
+      about_sect.scrollIntoView({behavior: "smooth"});    
+  }
 }
 
 function show_contact() {
