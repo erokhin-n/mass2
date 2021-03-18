@@ -879,9 +879,7 @@ body {
 }
 
 @media (min-device-width: 320px) and (max-device-width: 1023px) and (orientation: portrait) { 
-  .wrapper {
-    grid-template: repeat(3, 1fr) / 1fr;
-  }
+
   .menu_heading {
     font-size: 80px;
   }
