@@ -145,6 +145,10 @@ function scroll_to_view(event) {
   
   let click_event = event.target;
   massage_view.scrollIntoView({behavior: "smooth"});
+<<<<<<< HEAD
+=======
+  let click_event = event.target;
+>>>>>>> 23_fix_scroll
   switch (click_event.textContent){
     case "первый вид массажа":
       slide_1();
@@ -156,10 +160,15 @@ function scroll_to_view(event) {
       slide_3();
       break; 
     case "обо мне":
+<<<<<<< HEAD
       massage_view.scrollIntoView({behavior: "smooth"}); 
       break;   
   }
 
+=======
+      about_sect.scrollIntoView({behavior: "smooth"});    
+  }
+>>>>>>> 23_fix_scroll
 }
 
 function show_contact() {
