@@ -144,9 +144,9 @@ function close_views() {
 function scroll_to_view(event) {
   
   let click_event = event.target;
+  massage_view.scrollIntoView({behavior: "smooth"});
   switch (click_event.textContent){
     case "первый вид массажа":
-      massage_view.scrollIntoView({behavior: "smooth"});
       slide_1();
       break;
   //   case "второй вид массажа":
@@ -158,6 +158,7 @@ function scroll_to_view(event) {
   //   case "обо мне":
   //     about_sect.scrollIntoView({behavior: "smooth"});    
   }
+
 }
 
 function show_contact() {
