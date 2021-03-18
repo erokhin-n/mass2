@@ -762,7 +762,7 @@ body {
 }
 
 .contacts {
-  position: absolute;
+  /*position: absolute;*/
   color: #fff;
   display: grid;
   max-width: 50%;
@@ -785,7 +785,7 @@ body {
 }
 
 .contacts_opac {
-  position: absolute;
+  /*position: absolute;*/
   color: #fff;
   display: grid;
   max-width: 50%;
@@ -809,7 +809,7 @@ body {
 
 .close_cont {
   color: #fff;
-  /*display: grid;*/
+  display: grid;
   min-width: 10%;
   min-height: 10%;
   font-size: 45px;
@@ -822,12 +822,13 @@ body {
   align-content: center;
   filter: 0px;
   /*filter: none;*/
-  padding: 0 30px 0 30px;
+  /*padding: 0 30px 0 30px;*/
   animation: visible 0.4s linear;
   transition: 0.5s;
-  position: absolute;
+  /*position: absolute;*/
   left: 57%;
   bottom: 163%;
+  /*justify-content: center;*/
 }
 
 .close_cont_opac {
@@ -848,7 +849,7 @@ body {
   padding: 0 30px 0 30px;
   animation: disappear 0.4s linear;
   transition: 0.5s;
-  position: absolute;
+  /*position: absolute;*/
   left: 57%;
   bottom: 163%;
 }
@@ -857,6 +858,9 @@ body {
   width: 10%;
   height: 5px;
   justify-self: end;
+  display: block;
+  position: relative;
+  align-self: start;
 }
 
 .cross_cont:before, .cross_cont:after {
@@ -876,6 +880,16 @@ body {
 
 .cross_cont:after {
   transform: rotate(-45deg);
+}
+
+.contact_cont {
+  position: absolute;
+  display: grid;
+  bottom: 141%;
+  left: 13%;
+  right: 11%; 
+  width: 75%;
+  height: 50%;
 }
 
 @media (min-device-width: 320px) and (max-device-width: 1023px) and (orientation: portrait) { 
