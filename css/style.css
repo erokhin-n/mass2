@@ -766,11 +766,8 @@ body {
   display: grid;
   bottom: 141%;
   height: 45%;
-  max-width: 50%;
+  min-width: 100%;
   animation: visible 0.4s linear;
-  margin: auto 0;
-  left: 30%;
-  right: 30%;
 }
 
 .contact_cont_hide {
@@ -782,13 +779,13 @@ body {
   color: #fff;
   display: grid;
   max-width: 100%;
-  min-height: 11%;
+  max-height: 46%;
   font-size: 36px;
   border-radius: 10px;
   cursor: pointer; 
   /*background-color: #fff;*/
   background-color: rgba(0, 0, 0, 0.5);
-  justify-self: end;
+  justify-self: center;
   /*padding: 15% 0 0 0;*/
   align-content: center;
   filter: 0px;
@@ -826,14 +823,14 @@ body {
 .close_cont {
   color: #fff;
   display: grid;
-  min-width: 30%;
+  min-width: 7%;
   max-height: 54%;
   font-size: 45px;
   border-radius: 10px;
   cursor: pointer; 
   /*background-color: #fff;*/
   background-color: rgba(0, 0, 0, 0.5);
-  justify-self: end;
+  justify-self: center;
   /*padding: 15% 0 0 0;*/
   align-content: center;
   filter: 0px;
@@ -871,9 +868,7 @@ body {
 }
 
 .cross_cont {
-  width: 96%;
-  height: 5px;
-  justify-self: end;
+  justify-self: center;
   display: block;
   position: relative;
   align-self: start;
@@ -887,7 +882,7 @@ body {
   display: block;
   top: 47%;
   left: 28%;
-  position: absolute;
+  /*position: absolute;*/
 }
 
 .cross_cont:before {
