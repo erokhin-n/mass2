@@ -166,6 +166,7 @@ function show_contact() {
   header.setAttribute('class', 'header header_blur');
   contacts.setAttribute('class', 'contacts');
   close_cont.setAttribute('class', 'close_cont');
+  contact_cont.setAttribute('class', 'contact_cont');
   cover_curtain();
 }
 
@@ -173,9 +174,11 @@ function close_contact(){
 	header.setAttribute('class', 'header header_no_blur');
 	contacts.setAttribute('class', 'contacts_opac');
 	close_cont.setAttribute('class', 'close_cont_opac');
+	contact_cont.setAttribute('class', 'contact_cont_hide');
 	setTimeout(()=>{
 	  contacts.setAttribute('class', 'hidden');
 	  close_cont.setAttribute('class', 'hidden');
+	  contact_cont.setAttribute('class', 'hidden');
 	  cover_curtain_hide();
 	}, 400)
 }
