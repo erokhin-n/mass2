@@ -937,14 +937,20 @@ body {
   .about_text {
     font-size: 58px;
   }
-  .button_up:before, .button_up:after {
+  .button_up:before, .button_up:after,
+  .button_up:hover:before, .button_up:hover:after,
+  .button_up:active:before, .button_up:active:after {
     width: 228px;
     height: 32px;
   }
-  .button_up:before {
+  .button_up:before, 
+  ..button_up:hover:before,
+  .button_up:active:before {
     right: 11%;
   }
-  .button_up:after {
+  .button_up:after,
+  .button_up:hover:after,
+  .button_up:active:after {
     left: 6%;
   }
 
@@ -958,16 +964,21 @@ body {
   .button_up_hide:after {
     left: 6%;
   }
-
-
-  .button_right:before, .button_right:after {
+  
+  .button_right:before, .button_right:after,
+  .button_right:hover:before, .button_right:hover:after,
+  .button_right:active:before, .button_right:active:after {
     width: 228px;
     height: 32px;
   }
-  .button_right:before {
+  .button_right:before,
+  .button_right:hover:before,
+  .button_right:active:before {
     bottom: 215%;
   }
-  .button_right:after {
+  .button_right:after,
+  .button_right:hover:after,
+  .button_right:active:after {
     top: 170%;
   }
 
@@ -982,14 +993,20 @@ body {
     top: 170%;
   }
 
-  .button_left:before, .button_left:after {
+  .button_left:before, .button_left:after,
+  .button_left:hover:before, .button_left:hover:after,
+  .button_left:active:before, .button_left:active:after {
     width: 228px;
     height: 32px;
   }
-  .button_left:before {
+  .button_left:before,
+  .button_left:hover:before,
+  .button_left:active:before {
     bottom: 215%;
   }
-  .button_left:after {
+  .button_left:after,
+  .button_left:hover:after,
+  .button_left:active:after {
     top: 170%;
   }
 
