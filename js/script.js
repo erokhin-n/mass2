@@ -17,6 +17,7 @@ let contact_cont = document.getElementById('contact_cont');
 let close_but = document.getElementById('close_but');
 let contacts = document.getElementById('contacts');
 let close_cont = document.getElementById('close_cont');
+// let cross_cont = document.getElementById('cross_cont');
 let curtain = document.getElementById('curtain');
 let massage_sect = document.getElementById('massage_sect');
 
