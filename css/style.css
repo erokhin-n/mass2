@@ -988,7 +988,7 @@ body {
     min-height: 11%;
     font-size: 53px;
     background-color: rgba(0, 0, 0, 0.5);
-    min-width: 24%;
+    min-width: 43%;
     left: 64%;
   }
   .contacts {
@@ -1004,25 +1004,10 @@ body {
   .cross_cont:before, .cross_cont:after {
     height: 10px;
     width: 103px;
+    position: absolute;
+  }
+  .cross_cont:before {
+    left: 5%;
   }
 }
 
-/*@media (max-device-width: 768px) {
-  .menu_link {
-  color: red;
-  }
-}*/
-
-/*@media (max-width: 767px) {
-  .menu_link {
-    font-size: 48px;
-    color: red;
-  }
-}*/
-
-/*@media(min-width: 992px) and (max-width: 1400px) {
-  .menu_link {
-    font-size: 48px;
-    color: green;
-  }
-}*/
