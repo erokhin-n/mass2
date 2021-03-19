@@ -944,9 +944,9 @@ body {
     height: 32px;
   }
   .button_up:before, 
-  ..button_up:hover:before,
+  .button_up:hover:before,
   .button_up:active:before {
-    right: 11%;
+    right: 4%;
   }
   .button_up:after,
   .button_up:hover:after,
