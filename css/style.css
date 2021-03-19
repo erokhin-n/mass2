@@ -937,6 +937,73 @@ body {
   .about_text {
     font-size: 58px;
   }
+  .button_up:before, .button_up:after {
+    width: 228px;
+    height: 32px;
+  }
+  .button_up:before {
+    right: 11%;
+  }
+  .button_up:after {
+    left: 6%;
+  }
+
+  .button_up_hide:before, .button_up_hide:after {
+    width: 228px;
+    height: 32px;
+  }
+  .button_up_hide:before {
+    right: 11%;
+  }
+  .button_up_hide:after {
+    left: 6%;
+  }
+
+
+  .button_right:before, .button_right:after {
+    width: 228px;
+    height: 32px;
+  }
+  .button_right:before {
+    bottom: 215%;
+  }
+  .button_right:after {
+    top: 170%;
+  }
+
+  .button_right_hide:before, .button_right_hide:after {
+    width: 228px;
+    height: 32px;
+  }
+  .button_right_hide:before {
+    bottom: 215%;
+  }
+  .button_right_hide:after {
+    top: 170%;
+  }
+
+  .button_left:before, .button_left:after {
+    width: 228px;
+    height: 32px;
+  }
+  .button_left:before {
+    bottom: 215%;
+  }
+  .button_left:after {
+    top: 170%;
+  }
+
+  .button_left_hide:before, .button_left_hide:after {
+    width: 228px;
+    height: 32px;
+  }
+  .button_left_hide:before {
+    bottom: 215%;
+  }
+  .button_left_hide:after {
+    top: 170%;
+  }
+
   .close_cont {
     min-height: 11%;
     font-size: 53px;
