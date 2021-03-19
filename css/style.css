@@ -774,7 +774,7 @@ body {
   animation: disappears 0.4s linear;
 }
 
-.contacts {
+.contacts, .contacts_opac {
   /*position: absolute;*/
   color: #fff;
   display: grid;
@@ -798,29 +798,10 @@ body {
 }
 
 .contacts_opac {
-  /*position: absolute;*/
-  color: #fff;
-  display: grid;
-  max-width: 50%;
-  min-height: 11%;
-  font-size: 45px;
-  border-radius: 10px;
-  cursor: pointer; 
-  /*background-color: #fff;*/
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-self: center;
-  /*padding: 15% 0 0 0;*/
-  align-content: center;
-  filter: 0px;
-  /*filter: none;*/
-  padding: 0 30px 0 30px;
   animation: disappear 0.4s linear;
-  transition: 0.5s;
-  bottom: 145%;
-  left: 34%;
 }
 
-.close_cont {
+.close_cont, .close_cont_opac {
   color: #fff;
   display: grid;
   min-width: 7%;
@@ -845,26 +826,7 @@ body {
 }
 
 .close_cont_opac {
-  color: #fff;
-  /*display: grid;*/
-  min-width: 7%;
-  min-height: 10%;
-  font-size: 45px;
-  border-radius: 10px;
-  cursor: pointer; 
-  /*background-color: #fff;*/
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-self: center;
-  /*padding: 15% 0 0 0;*/
-  align-content: center;
-  filter: 0px;
-  /*filter: none;*/
-  padding: 0 30px 0 30px;
   animation: disappear 0.4s linear;
-  transition: 0.5s;
-  /*position: absolute;*/
-  left: 57%;
-  bottom: 163%;
 }
 
 .cross_cont {
