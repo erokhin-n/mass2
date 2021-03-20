@@ -2,6 +2,7 @@
 
 let header = document.getElementById('header');
 let massage_view = document.getElementById('massage_view');
+let desc_cont = document.getElementById('description_cont');
 let desc_head = document.getElementById('desc_head');
 let desc_text = document.getElementById('desc_text');
 let img = document.getElementById('desc_img');
@@ -191,21 +192,51 @@ function cover_curtain() {
 function cover_curtain_hide() {
 	curtain.setAttribute('class', 'hidden');
 }
+// ===============
+const mass = [];
+
+massage_view.addEventListener('touchstart', touchSt);
+massage_view.addEventListener('touchend', touchOf);
+
+function touchSt(event) {
+	// return start;
+	mass[0] = event.changedTouches[0].clientX;
+}
+
+
+function touchOf(event) {
+  mass[1] = event.changedTouches[0].clientX;
+  if (mass[0] > mass[1]) {
+  	right_click();
+  } else if (mass[0] < mass[1]) {
+  	left_click();
+  }
+}
+
+console.log(mass)
+
+
+// ================
+
+// if (touchSt() > touchOf()) {
+// 	console.log('налево, епта');
+// }
+
 
 // ==========
-header.addEventListener('touchstart', message_sw_st, false);
-header.addEventListener('touchstart', message_sw_end, false);
-header.addEventListener('touchmove', message_move, false);
+// header.addEventListener('touchstart', message_sw_st, false);
+// header.addEventListener('touchstart', message_sw_end, false);
+// header.addEventListener('touchmove', message_move, false);
 
-function message_sw_st() {
-	alert('startSwipe');
-}
-function message_sw_end() {
-	alert('endSwipe');
-}
-function message_move() {
-	alert('swipeMove')
-}
+// function message_sw_st(event) {
+// 	console.log(event.clientHeight);
+// }
+// function message_sw_end(event) {
+// 	console.log('endSwipe');
+// }
+// function message_move(event) {
+// 	console.log('swipeMove')
+// }
 
 // =============
 
