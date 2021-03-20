@@ -192,25 +192,37 @@ function cover_curtain() {
 function cover_curtain_hide() {
 	curtain.setAttribute('class', 'hidden');
 }
+// ===========
+const st_en_cord = [];
+const mv_cord = [];
 
-const mass = [];
 
 massage_view.addEventListener('touchstart', touchSt);
 massage_view.addEventListener('touchend', touchOf);
 
+// massage_view.addEventListener('touchmove', touchmv);
+
+// function touchmv(event) {
+//   mv_cord.push(event.changedTouches[0].clientX);
+//   console.log(mv_cord.length);
+// 	// console.log (`движение ${event.changedTouches[0].clientX}`);
+// }
+
 function touchSt(event) {
 	// return start;
-	mass[0] = event.changedTouches[0].clientX;
+	st_en_cord[0] = event.changedTouches[0].clientX;
 }
 
 
 function touchOf(event) {
-  mass[1] = event.changedTouches[0].clientX;
-  if (mass[0] > mass[1]) {
+  st_en_cord[1] = event.changedTouches[0].clientX;
+  let st = st_en_cord[0];
+  let end = st_en_cord[1];
+  if (st > end && st - end > 400) {
   	right_click();
-  } else if (mass[0] < mass[1]) {
+  } else if (st < end && end - st > 400) {
   	left_click();
-  }
+  } 
 }
 
 
