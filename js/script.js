@@ -203,7 +203,7 @@ function message_sw_st() {
 function message_sw_end() {
 	alert('endSwipe');
 }
-function message_move() {
+function message_move() {g
 	alert('swipeMove')
 }
 
