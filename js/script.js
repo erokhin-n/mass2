@@ -182,7 +182,7 @@ function close_contact(){
 	  contact_cont.setAttribute('class', 'hidden');
 	  cover_curtain_hide();
 	}, 400)
-}
+} 
 
 function cover_curtain() {
   curtain.setAttribute('class', 'cover_curtain');
