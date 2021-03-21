@@ -1,7 +1,9 @@
 "use strict";
 
 let header = document.getElementById('header');
-let massage_view = document.getElementById('massage_view');
+let massage_view_1 = document.getElementById('massage_view_1');
+let massage_view_2 = document.getElementById('massage_view_2');
+let massage_view_3 = document.getElementById('massage_view_3');
 let desc_cont = document.getElementById('description_cont');
 let desc_head = document.getElementById('desc_head');
 let desc_text = document.getElementById('desc_text');
