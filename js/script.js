@@ -193,8 +193,8 @@ function cover_curtain_hide() {
 	curtain.setAttribute('class', 'hidden');
 }
 // ===========
-const st_en_cord = [];
-const mv_cord = [];
+const cordX = [];
+
 
 
 massage_view.addEventListener('touchstart', touchSt);
@@ -209,18 +209,17 @@ massage_view.addEventListener('touchend', touchOf);
 // }
 
 function touchSt(event) {
-	// return start;
-	st_en_cord[0] = event.changedTouches[0].clientX;
+	cordX[0] = event.changedTouches[0].clientX;
 }
 
 
 function touchOf(event) {
-  st_en_cord[1] = event.changedTouches[0].clientX;
-  let st = st_en_cord[0];
-  let end = st_en_cord[1];
-  if (st > end && st - end > 400) {
+  cordX[1] = event.changedTouches[0].clientX;
+  let st = cordX[0];
+  let end = cordX[1];
+  if (st > end && st - end > 300) {
   	right_click();
-  } else if (st < end && end - st > 400) {
+  } else if (st < end && end - st > 300) {
   	left_click();
   } 
 }
