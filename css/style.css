@@ -96,7 +96,7 @@ body {
   100% {transform: translate(0%, 100%);}
 }
 
-@keyframes visible {
+@keyframes showV {
   0% {transform: scale(0);}
   50% {transform: scale(0.5);}
   100% {transform: scale(1);}
@@ -182,7 +182,7 @@ body {
   animation: blured 0.8s linear;
 }
 
-.header_massage_views {
+.header_massage_views, .head_mass_down {
   position: absolute;
   min-height: 80vh;
   font-size: 45px;
@@ -190,29 +190,15 @@ body {
   display: grid;
   justify-content: center;
   border-radius: 10px;
-  /*top: -95%;*/
   bottom: 107%;
   right: 18%;
   left: 18%;
   color: rgba(0, 0, 0, 0);
   animation: up_head_views 0.5s linear;
-  z-index: 10;
 }
 
 .head_mass_down {
   animation: down_head_views 0.7s linear;
-  position: absolute;
-  min-height: 80vh;
-  font-size: 45px;
-  background-color: rgba(0, 0, 0, 0);
-  display: grid;
-  justify-content: center;
-  border-radius: 10px;
-  top: -95%;
-  bottom: 107%;
-  right: 18%;
-  left: 18%;
-  color: rgba(0, 0, 0, 0);
 }
 
 .head_view, .head_close {
@@ -231,7 +217,7 @@ body {
   filter: 0px;
   /*filter: none;*/
   padding: 0 30px 0 30px;
-  animation: visible 0.4s linear;
+  animation: showV 0.4s linear;
   transition: 0.5s;
 }
 
@@ -777,7 +763,7 @@ body {
   bottom: 141%;
   height: 45%;
   min-width: 100%;
-  animation: visible 0.4s linear;
+  animation: showV 0.4s linear;
 }
 
 .contact_cont_hide {
@@ -801,7 +787,7 @@ body {
   filter: 0px;
   /*filter: none;*/
   padding: 0 10px 0 10px;
-  animation: visible 0.4s linear;
+  animation: showV 0.4s linear;
   transition: 0.5s;
 /*  bottom: 145%;
   left: 34%*/;
@@ -827,7 +813,7 @@ body {
   filter: 0px;
   /*filter: none;*/
   /*padding: 0 30px 0 30px;*/
-  animation: visible 0.4s linear;
+  animation: showV 0.4s linear;
   transition: 0.5s;
   /*position: absolute;*/
   left: 57%;
