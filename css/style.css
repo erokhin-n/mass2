@@ -67,15 +67,15 @@ body {
 
 
 @keyframes to_left_edge {
-  0% {transform: translate(0);}
-  50% {transform: translate(-50%);}
-  100% {transform: translate(-100%);}
+  0% {transform: translateX(0) scale(1);}
+  50% {transform: translateX(-50%) scale(0.5);}
+  100% {transform: translateX(-100%) scale(0);}
 }
 
 @keyframes to_right_edge {
-  0% {opacity: 0;}
-  50% {opacity: 0.5;}
-  100% {opacity: 1;}
+  0% {transform: translateX(100%) scale(0);}
+  50% {transform: translateX(50%) scale(0.5);}
+  100% {transform: translateX(0) scale(1);}
 }
 
 @keyframes rotate3 {
@@ -132,7 +132,7 @@ body {
   100% {transform: scale(0);}
 }
 
-.slide_anim_1{
+/*.slide_anim_1{
   animation: rotate 0.7s linear ;
 }
 .slide_anim_2{
@@ -141,7 +141,7 @@ body {
 
 .slide_anim_3{
   animation: rotate3 0.7s linear;
-}
+}*/
 
 .wrapper {
   min-height: 100vh;
@@ -315,17 +315,29 @@ body {
 
 .massage_views {
   position: relative;
-  /*animation: box_shadow 4s infinite;*/
+  min-width: 100%;
+  min-height: 100vh;
+  /*animation: box_shadow 4s 
+  infinite;*/
 }
 
-.massage_view_1, .massage_view_2, .massage_view_3 {
+.massage_view_1, .massage_view_2, .massage_view_3,
+.massage_view_hide {
   min-width: 100%;
   min-height: 100vh;
   display: grid;
   grid-template: minmax( 100%, 1fr ) / repeat( 2, 1fr );
   position: relative;
   box-shadow: 0px 1px 15px 1px #000;
-  animation: to;
+
+}
+
+.massage_view_hide {
+  animation: to_left_edge 2s linear;
+}
+
+.massage_view_2 {
+  animation: to_right_edge 2s linear;
 }
 
 
