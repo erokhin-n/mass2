@@ -333,11 +333,11 @@ body {
 }
 
 .massage_view_hide {
-  animation: to_left_edge 2s linear;
+  animation: to_left_edge 0.5s linear;
 }
 
 .massage_view_2 {
-  animation: to_right_edge 2s linear;
+  animation: to_right_edge 0.5s linear;
 }
 
 

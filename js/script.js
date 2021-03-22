@@ -68,12 +68,9 @@ function slide_1(){
 function slide_2(){
 	massage_view_1.setAttribute('class', 'massage_view_hide');
 	setTimeout(()=>{
-		massage_view_2.setAttribute('class', 'massage_view_2');
-	}, 200);
-	setTimeout(()=>{
-
 		massage_view_1.setAttribute('class', 'hidden');
-	}, 400);
+		massage_view_2.setAttribute('class', 'massage_view_2');
+	}, 300);
 }
 
 function slide_3(){
