@@ -980,7 +980,7 @@ body {
     top: 170%;
   }
 
-/*  .close_cont {
+  .close_cont {
     min-height: 11%;
     font-size: 53px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -991,6 +991,7 @@ body {
     min-width: 100%;
     left: 0;
     font-size: 108px;
+    color: #fff;
   }
   .contacts_opac {
     min-width: 100%;
@@ -1009,7 +1010,7 @@ body {
   }
   .cross_cont:before {
     left: 5%;
-  }*/
+  }
 
 }
 
