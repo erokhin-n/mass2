@@ -58,7 +58,7 @@ function scroll_up() {
 	header.scrollIntoView({behavior: "smooth"});
 }
 
-function slide_1(){
+function r_slide_1(){
 	massage_view_3.setAttribute('class', 'massage_view_hide');
 	setTimeout(()=>{
 		massage_view_3.setAttribute('class', 'hidden');
@@ -66,7 +66,7 @@ function slide_1(){
 	}, 300);
 }
 
-function slide_2(){
+function r_slide_2(){
 	massage_view_1.setAttribute('class', 'massage_view_hide');
 	setTimeout(()=>{
 		massage_view_1.setAttribute('class', 'hidden');
@@ -74,7 +74,7 @@ function slide_2(){
 	}, 300);
 }
 
-function slide_3(){
+function r_slide_3(){
   massage_view_2.setAttribute('class', 'massage_view_hide');
 	setTimeout(()=>{
 		massage_view_2.setAttribute('class', 'hidden');
@@ -82,36 +82,57 @@ function slide_3(){
 	}, 300);
 }
 
-let count = 0;
+// function l_slide_3(){
+// 	massage_view_1.setAttribute('class', 'massage_view_hide');
+// 	setTimeout(()=>{
+// 		massage_view_1.setAttribute('class', 'hidden');
+// 		massage_view_3.setAttribute('class', 'massage_view_3');
+// 	}, 300);
+// }
 
+// function l_slide_2(){
+// 	massage_view_3.setAttribute('class', 'massage_view_hide');
+// 	setTimeout(()=>{
+// 		massage_view_3.setAttribute('class', 'hidden');
+// 		massage_view_2.setAttribute('class', 'massage_view_3');
+// 	}, 300);
+// }
+
+let count_r = 0;
+let count_l = 0;
 
 function right_click() {
-  count = count + 1;
-  if(count === 3){
-  	count = 0;
+  count_r = count_r + 1;
+  if(count_r === 3){
+  	count_r = 0;
   }
-  console.log(count);
-  if(count === 1) {
-  	slide_2();
-  } else if (count === 2){
-  	slide_3();
-  } else if (count === 0) {
-  	slide_1();
+
+  console.log(`право ${count_r}`);
+
+  if(count_r === 1) {
+  	r_slide_2();
+  } else if (count_r === 2){
+  	r_slide_3();
+  } else if (count_r === 0) {
+  	r_slide_1();
   }
 }
 
 function left_click() {
- switch(img.className){
-		case 'desc_img img_1':
-		  slide_3();
-		  break;
-	  case 'desc_img img_2':
-	    slide_1();
-	    break;
-	  case 'desc_img img_3':
-	    slide_2();
-	    break;
-	}
+  count_l = count_l + 1;
+
+  if(count_l === 3){
+  	count_l = 0;
+  }
+   
+  if (count_l === 1) {
+  	l_slide_3();
+  } else if (count_l === 2){
+  	l_slide_2();
+  }
+  console.log(`лево ${count_l}`);
+
+ 
 }
  
 function head_mass_show() {
