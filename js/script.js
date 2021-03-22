@@ -82,18 +82,22 @@ function slide_3(){
 	}, 300);
 }
 
+let count = 0;
+
+
 function right_click() {
-	switch(img.className){
-		case 'desc_img img_1':
-		  slide_2();
-		  break;
-	  case 'desc_img img_2':
-	    slide_3();
-	    break;
-	  case 'desc_img img_3':
-	    slide_1();
-	    break;
-	}
+  count = count + 1;
+  if(count === 3){
+  	count = 0;
+  }
+  console.log(count);
+  if(count === 1) {
+  	slide_2();
+  } else if (count === 2){
+  	slide_3();
+  } else if (count === 0) {
+  	slide_1();
+  }
 }
 
 function left_click() {
