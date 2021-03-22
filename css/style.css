@@ -924,7 +924,7 @@ body {
     left: 6%;
   }
   
-  .button_right:before, .button_right:after,
+/*  .button_right:before, .button_right:after,
   .button_right:hover:before, .button_right:hover:after,
   .button_right:active:before, .button_right:active:after {
     width: 228px;
@@ -978,7 +978,7 @@ body {
   }
   .button_left_hide:after {
     top: 170%;
-  }
+  }*/
 
   .close_cont {
     min-height: 11%;
