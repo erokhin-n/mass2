@@ -59,10 +59,11 @@ function scroll_up() {
 }
 
 function slide_1(){
-	massage_view.setAttribute('class', 'massage_view slide_anim_1');
-	desc_head.innerHTML = 'первый вид массажа';
-	desc_text.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, nemo illo illum totam at quasi provident laborum exercitationem quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, nemo illo illum totam at quasi provident laborum exercitationem quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. '
-	img.setAttribute('class', 'desc_img img_1');
+	massage_view_3.setAttribute('class', 'massage_view_hide');
+	setTimeout(()=>{
+		massage_view_3.setAttribute('class', 'hidden');
+		massage_view_1.setAttribute('class', 'massage_view_1');
+	}, 300);
 }
 
 function slide_2(){
@@ -75,9 +76,9 @@ function slide_2(){
 
 function slide_3(){
   massage_view_2.setAttribute('class', 'massage_view_hide');
-	massage_view_3.setAttribute('class', 'massage_view_3');
 	setTimeout(()=>{
 		massage_view_2.setAttribute('class', 'hidden');
+		massage_view_3.setAttribute('class', 'massage_view_3');
 	}, 300);
 }
 

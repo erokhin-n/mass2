@@ -336,7 +336,7 @@ body {
   animation: to_left_edge 0.5s linear;
 }
 
-.massage_view_2 {
+.massage_view_1, .massage_view_2, .massage_view_3 {
   animation: to_right_edge 0.5s linear;
 }
 
