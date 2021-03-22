@@ -859,7 +859,7 @@ body {
   .menu_link {
     font-size: 90px;
   }
-  .menu_heading:hover {
+  .menu_heading:hover { 
     font-size: 80px;
   }
   .massage_view {
