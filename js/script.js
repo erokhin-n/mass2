@@ -196,7 +196,7 @@ function cover_curtain() {
 function cover_curtain_hide() {
 	curtain.setAttribute('class', 'hidden');
 }
-// ===========
+
 const cordX = [];
 const cordY = [];
 
