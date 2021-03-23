@@ -20,7 +20,6 @@ let contact_cont = document.getElementById('contact_cont');
 let close_but = document.getElementById('close_but');
 let contacts = document.getElementById('contacts');
 let close_cont = document.getElementById('close_cont');
-// let cross_cont = document.getElementById('cross_cont');
 let curtain = document.getElementById('curtain');
 let massage_sect = document.getElementById('massage_sect');
 
@@ -31,7 +30,6 @@ window.addEventListener('scroll', function() {
   let scroll_proc = document.getElementById('scroll_proc');
   scroll_proc.innerHTML = scroll_procent;
 
-  // console.log(scroll_procent);
   if (scroll_procent > 30){
   	button_up.setAttribute('class', 'button_up');
   } else if (scroll_procent < 30 && button_up.className === 'button_up') {
@@ -58,15 +56,8 @@ function scroll_up() {
 	header.scrollIntoView({behavior: "smooth"});
 }
 
-// function r_slide_1(){
-// 	massage_view_3.setAttribute('class', 'massage_view_hide');
-// 	setTimeout(()=>{
-// 		massage_view_3.setAttribute('class', 'hidden');
-// 		massage_view_1.setAttribute('class', 'massage_view_1');
-// 	}, 300);
-// }
 
-function r_slide_2(){
+function right_click(){
 	if(massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
     massage_view_1.setAttribute('class', 'massage_view_hide_r');
 	  setTimeout(()=>{
@@ -89,7 +80,7 @@ function r_slide_2(){
 }
 
 
-function l_slide_2(){
+function left_click(){
   if( massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
     massage_view_1.setAttribute('class', 'massage_view_hide_l');
 	  setTimeout(()=>{
@@ -111,16 +102,6 @@ function l_slide_2(){
   }
 }
 
-let count_r = 0;
-let count_l = 0;
-
-function right_click() {
-  r_slide_2();
-}
-
-function left_click() {
-  l_slide_2();
-}
  
 function head_mass_show() {
 	header.setAttribute('class', 'header header_blur');
@@ -161,17 +142,23 @@ function close_views() {
 }
 
 function scroll_to_view(event) {
-	massage_view.scrollIntoView({behavior: "smooth"});
+	massage_sect.scrollIntoView({behavior: "smooth"});
   let click_event = event.target;
   switch (click_event.textContent){
     case "первый вид массажа":
-      slide_1();
+      massage_view_2.setAttribute('class', 'hidden');
+      massage_view_3.setAttribute('class', 'hidden');
+      massage_view_1.setAttribute('class', 'massage_view_1_l');
       break;
     case "второй вид массажа":
-      slide_2();
+      massage_view_1.setAttribute('class', 'hidden');
+      massage_view_3.setAttribute('class', 'hidden');
+      massage_view_2.setAttribute('class', 'massage_view_2_r');
       break; 
     case "третий вид массажа":
-      slide_3();
+      massage_view_1.setAttribute('class', 'hidden');
+      massage_view_2.setAttribute('class', 'hidden');
+      massage_view_3.setAttribute('class', 'massage_view_3_l');
       break; 
     case "обо мне":
       about_sect.scrollIntoView({behavior: "smooth"}); 
