@@ -937,15 +937,21 @@ body {
     width: 228px;
     height: 32px;
   }
-  .button_up:before, 
+  .button_up:before{
+    right: 3%
+  }
+
   .button_up:hover:before,
   .button_up:active:before {
-    right: 4%;
+    right: 43%;
   }
-  .button_up:after,
+  .button_up:after {
+    left: 3%;
+  }
+
   .button_up:hover:after,
   .button_up:active:after {
-    left: 6%;
+    left: 21%;
   }
 
   .button_up_hide:before, .button_up_hide:after {
