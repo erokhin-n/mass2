@@ -200,6 +200,8 @@ function cover_curtain_hide() {
 const cordX = [];
 const cordY = [];
 
+massage_sect.addEventListener('touchstart', touchSt);
+massage_sect.addEventListener('touchend', touchOf);
 
 function touchSt(event) {
 	cordX[0] = event.changedTouches[0].clientX;
@@ -218,10 +220,6 @@ function touchOf(event) {
   let y = stY - endY;
   if (st > end && st - end > 300 && y > -100 && y < 100) {
   	right_click();
-  	// button_right.setAttribute('class', 'button_right_hide');
-  	// setTimeout(()=>{
-  	// 	button_right.setAttribute('class', 'hidden');
-  	// },400)
   	console.log(`вправо ${y}`);
   } else if (st < end && end - st > 300 && y > -100 && y < 100) {
   	left_click();
