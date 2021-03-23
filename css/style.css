@@ -931,28 +931,47 @@ body {
   .about_text {
     font-size: 58px;
   }
+
   .button_up:before, .button_up:after,
-  .button_up:hover:before, .button_up:hover:after,
-  .button_up:active:before, .button_up:active:after {
+  .button_up:hover:before, .button_up:hover:after {
     width: 228px;
     height: 32px;
+    background-color: rgba(0, 0, 0, 0.2);
   }
   .button_up:before{
     right: 3%
   }
 
-  .button_up:hover:before,
-  .button_up:active:before {
+  .button_up:hover:before {
     right: 43%;
+    /*transform: scale(1) rotate(-30deg);*/
   }
   .button_up:after {
     left: 3%;
   }
 
-  .button_up:hover:after,
-  .button_up:active:after {
+  .button_up:hover:after{
     left: 21%;
+    /*transform: scale(1) rotate(30deg);*/
   }
+
+  /*------------------------*/
+  .button_up:active:before, .button_up:active:after {
+    width: 228px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .button_up:active:before{
+    right: 3%;
+    transform: scale(1) rotate(-30deg);
+  }
+
+  .button_up:active:after {
+    left: 3%;
+    transform: scale(1) rotate(30deg);
+  }
+
+  /*---------------------------*/
 
   .button_up_hide:before, .button_up_hide:after {
     width: 228px;
