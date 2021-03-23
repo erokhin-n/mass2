@@ -58,81 +58,68 @@ function scroll_up() {
 	header.scrollIntoView({behavior: "smooth"});
 }
 
-function r_slide_1(){
-	massage_view_3.setAttribute('class', 'massage_view_hide');
-	setTimeout(()=>{
-		massage_view_3.setAttribute('class', 'hidden');
-		massage_view_1.setAttribute('class', 'massage_view_1');
-	}, 300);
-}
-
-function r_slide_2(){
-	massage_view_1.setAttribute('class', 'massage_view_hide');
-	setTimeout(()=>{
-		massage_view_1.setAttribute('class', 'hidden');
-		massage_view_2.setAttribute('class', 'massage_view_2');
-	}, 300);
-}
-
-function r_slide_3(){
-  massage_view_2.setAttribute('class', 'massage_view_hide');
-	setTimeout(()=>{
-		massage_view_2.setAttribute('class', 'hidden');
-		massage_view_3.setAttribute('class', 'massage_view_3');
-	}, 300);
-}
-
-function l_slide_3(){
-	massage_view_1.setAttribute('class', 'massage_view_hide');
-	setTimeout(()=>{
-		massage_view_1.setAttribute('class', 'hidden');
-		massage_view_3.setAttribute('class', 'massage_view_3');
-	}, 300);
-}
-
-// function l_slide_2(){
+// function r_slide_1(){
 // 	massage_view_3.setAttribute('class', 'massage_view_hide');
 // 	setTimeout(()=>{
 // 		massage_view_3.setAttribute('class', 'hidden');
-// 		massage_view_2.setAttribute('class', 'massage_view_3');
+// 		massage_view_1.setAttribute('class', 'massage_view_1');
 // 	}, 300);
 // }
+
+function r_slide_2(){
+	if(massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
+    massage_view_1.setAttribute('class', 'massage_view_hide');
+	  setTimeout(()=>{
+		  massage_view_1.setAttribute('class', 'hidden');
+		  massage_view_2.setAttribute('class', 'massage_view_2');
+	  }, 300);
+  } else if (massage_view_1.className === 'hidden' && massage_view_3.className === 'hidden') {
+  	massage_view_2.setAttribute('class', 'massage_view_hide');
+	  setTimeout(()=>{
+		  massage_view_2.setAttribute('class', 'hidden');
+		  massage_view_3.setAttribute('class', 'massage_view_3');
+	  }, 300);
+  } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
+    massage_view_3.setAttribute('class', 'massage_view_hide');
+	  setTimeout(()=>{
+		  massage_view_3.setAttribute('class', 'hidden');
+		  massage_view_1.setAttribute('class', 'massage_view_1');
+	  }, 300);
+  }
+}
+
+
+function l_slide_2(){
+  if( massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
+    massage_view_1.setAttribute('class', 'massage_view_hide');
+	  setTimeout(()=>{
+		  massage_view_1.setAttribute('class', 'hidden');
+		  massage_view_3.setAttribute('class', 'massage_view_3');
+	  }, 300);
+  } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
+  	massage_view_3.setAttribute('class', 'massage_view_hide');
+	  setTimeout(()=>{
+		  massage_view_3.setAttribute('class', 'hidden');
+		  massage_view_2.setAttribute('class', 'massage_view_2');
+	  }, 300);
+  } else if (massage_view_3.className === 'hidden' && massage_view_1.className === 'hidden') {
+  	massage_view_2.setAttribute('class', 'massage_view_hide');
+	  setTimeout(()=>{
+		  massage_view_2.setAttribute('class', 'hidden');
+		  massage_view_1.setAttribute('class', 'massage_view_1');
+	  }, 300);
+  }
+}
 
 let count_r = 0;
 let count_l = 0;
 
 function right_click() {
-  count_r = count_r + 1;
-  if(count_r === 3){
-  	count_r = 0;
-  }
-
-  console.log(`право ${count_r}`);
-
-  if(count_r === 1) {
-  	r_slide_2();
-  } else if (count_r === 2){
-  	r_slide_3();
-  } else if (count_r === 0) {
-  	r_slide_1();
-  }
+  r_slide_2();
 }
 
 function left_click() {
-  count_l = count_l + 1;
-
-  if(count_l === 3){
-  	count_l = 0;
-  }
-   
-  if (count_l === 1) {
-  	l_slide_3();
-  } else if (count_l === 2){
-  	l_slide_2();
-  }
-  console.log(`лево ${count_l}`);
-
- 
+  l_slide_2();
 }
  
 function head_mass_show() {
