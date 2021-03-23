@@ -66,22 +66,28 @@ body {
 }
 
 
-@keyframes rotate {
-  0% {opacity: 0;}
-  50% {opacity: 0.5;}
-  100% {opacity: 1;}
+@keyframes r_click_hide {
+  0% {transform: translateX(0) scale(1);}
+  50% {transform: translateX(-25%) scale(0.5);}
+  100% {transform: translateX(-50%) scale(0);}
 }
 
-@keyframes rotate2 {
-  0% {opacity: 0;}
-  50% {opacity: 0.5;}
-  100% {opacity: 1;}
+@keyframes r_click_show {
+  0% {transform: translateX(50%) scale(0);}
+  50% {transform: translateX(25%) scale(0.5);}
+  100% {transform: translateX(0) scale(1);}
 }
 
-@keyframes rotate3 {
-  0% {opacity: 0;}
-  50% {opacity: 0.5;}
-  100% {opacity: 1;}
+@keyframes l_click_hide {
+  0% {transform: translateX(0) scale(1);}
+  50% {transform: translateX(25%) scale(0.5);}
+  100% {transform: translateX(50%) scale(0);}
+}
+
+@keyframes l_click_show {
+  0% {transform: translateX(-50%) scale(0);}
+  50% {transform: translateX(-25%) scale(0.5);}
+  100% {transform: translateX(0) scale(1);}
 }
  
 @keyframes up_head_views {
@@ -132,7 +138,7 @@ body {
   100% {transform: scale(0);}
 }
 
-.slide_anim_1{
+/*.slide_anim_1{
   animation: rotate 0.7s linear ;
 }
 .slide_anim_2{
@@ -141,7 +147,7 @@ body {
 
 .slide_anim_3{
   animation: rotate3 0.7s linear;
-}
+}*/
 
 .wrapper {
   min-height: 100vh;
@@ -315,17 +321,42 @@ body {
 
 .massage_views {
   position: relative;
-  /*animation: box_shadow 4s infinite;*/
+  min-width: 100%;
+  min-height: 100vh;
+  /*animation: box_shadow 4s 
+  infinite;*/
 }
 
-.massage_view {
+.massage_view_1_r, .massage_view_2_r, .massage_view_3_r,
+.massage_view_1_l, .massage_view_2_l, .massage_view_3_l,
+.massage_view_hide,
+.massage_view_hide_r,
+.massage_view_hide_l {
   min-width: 100%;
   min-height: 100vh;
   display: grid;
   grid-template: minmax( 100%, 1fr ) / repeat( 2, 1fr );
   position: relative;
   box-shadow: 0px 1px 15px 1px #000;
+
 }
+
+.massage_view_hide_r {
+  animation: r_click_hide 0.5s linear;
+}
+
+.massage_view_hide_l {
+  animation: l_click_hide 0.5s linear;
+}
+
+.massage_view_1_r, .massage_view_2_r, .massage_view_3_r {
+  animation: r_click_show 0.5s linear;
+}
+
+.massage_view_1_l, .massage_view_2_l, .massage_view_3_l {
+  animation : l_click_show 0.5s linear;
+}
+
 
 .menu_link {
   font-size: 48px;
@@ -862,7 +893,11 @@ body {
   .menu_heading:hover { 
     font-size: 80px;
   }
-  .massage_view {
+  .massage_view_1_r, .massage_view_2_r, .massage_view_3_r,
+  .massage_view_1_l, .massage_view_2_l, .massage_view_3_l,
+  .massage_view_hide,
+  .massage_view_hide_r,
+  .massage_view_hide_l {
     grid-template: 1fr 1fr  / 1fr;
   }
   .description_cont {
@@ -924,62 +959,6 @@ body {
     left: 6%;
   }
   
-/*  .button_right:before, .button_right:after,
-  .button_right:hover:before, .button_right:hover:after,
-  .button_right:active:before, .button_right:active:after {
-    width: 228px;
-    height: 32px;
-  }
-  .button_right:before,
-  .button_right:hover:before,
-  .button_right:active:before {
-    bottom: 215%;
-  }
-  .button_right:after,
-  .button_right:hover:after,
-  .button_right:active:after {
-    top: 170%;
-  }
-
-  .button_right_hide:before, .button_right_hide:after {
-    width: 228px;
-    height: 32px;
-  }
-  .button_right_hide:before {
-    bottom: 215%;
-  }
-  .button_right_hide:after {
-    top: 170%;
-  }
-
-  .button_left:before, .button_left:after,
-  .button_left:hover:before, .button_left:hover:after,
-  .button_left:active:before, .button_left:active:after {
-    width: 228px;
-    height: 32px;
-  }
-  .button_left:before,
-  .button_left:hover:before,
-  .button_left:active:before {
-    bottom: 215%;
-  }
-  .button_left:after,
-  .button_left:hover:after,
-  .button_left:active:after {
-    top: 170%;
-  }
-
-  .button_left_hide:before, .button_left_hide:after {
-    width: 228px;
-    height: 32px;
-  }
-  .button_left_hide:before {
-    bottom: 215%;
-  }
-  .button_left_hide:after {
-    top: 170%;
-  }*/
-
   .close_cont {
     min-height: 11%;
     font-size: 53px;

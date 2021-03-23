@@ -1,7 +1,9 @@
 "use strict";
 
 let header = document.getElementById('header');
-let massage_view = document.getElementById('massage_view');
+let massage_view_1 = document.getElementById('massage_view_1');
+let massage_view_2 = document.getElementById('massage_view_2');
+let massage_view_3 = document.getElementById('massage_view_3');
 let desc_cont = document.getElementById('description_cont');
 let desc_head = document.getElementById('desc_head');
 let desc_text = document.getElementById('desc_text');
@@ -18,7 +20,6 @@ let contact_cont = document.getElementById('contact_cont');
 let close_but = document.getElementById('close_but');
 let contacts = document.getElementById('contacts');
 let close_cont = document.getElementById('close_cont');
-// let cross_cont = document.getElementById('cross_cont');
 let curtain = document.getElementById('curtain');
 let massage_sect = document.getElementById('massage_sect');
 
@@ -29,7 +30,6 @@ window.addEventListener('scroll', function() {
   let scroll_proc = document.getElementById('scroll_proc');
   scroll_proc.innerHTML = scroll_procent;
 
-  // console.log(scroll_procent);
   if (scroll_procent > 30){
   	button_up.setAttribute('class', 'button_up');
   } else if (scroll_procent < 30 && button_up.className === 'button_up') {
@@ -56,54 +56,52 @@ function scroll_up() {
 	header.scrollIntoView({behavior: "smooth"});
 }
 
-function slide_1(){
-	massage_view.setAttribute('class', 'massage_view slide_anim_1');
-	desc_head.innerHTML = 'первый вид массажа';
-	desc_text.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, nemo illo illum totam at quasi provident laborum exercitationem quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, nemo illo illum totam at quasi provident laborum exercitationem quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. '
-	img.setAttribute('class', 'desc_img img_1');
+
+function right_click(){
+	if(massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
+    massage_view_1.setAttribute('class', 'massage_view_hide_r');
+	  setTimeout(()=>{
+		  massage_view_1.setAttribute('class', 'hidden');
+		  massage_view_2.setAttribute('class', 'massage_view_2_r');
+	  }, 300);
+  } else if (massage_view_1.className === 'hidden' && massage_view_3.className === 'hidden') {
+  	massage_view_2.setAttribute('class', 'massage_view_hide_r');
+	  setTimeout(()=>{
+		  massage_view_2.setAttribute('class', 'hidden');
+		  massage_view_3.setAttribute('class', 'massage_view_3_r');
+	  }, 300);
+  } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
+    massage_view_3.setAttribute('class', 'massage_view_hide_r');
+	  setTimeout(()=>{
+		  massage_view_3.setAttribute('class', 'hidden');
+		  massage_view_1.setAttribute('class', 'massage_view_1_r');
+	  }, 300);
+  }
 }
 
-function slide_2(){
-	massage_view.setAttribute('class', 'massage_view slide_anim_2');
-	desc_head.innerHTML = 'второй вид массажа';
-	desc_text.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eos adipisci, nemo illo illum totam at quasi provident laborum exercitto quisquam suscipit libero, molestias nam eos adipisci, nemo illo illum totam at quasi provident laborum exercitationem quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. '
-	img.setAttribute('class', 'desc_img img_2');
+
+function left_click(){
+  if( massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
+    massage_view_1.setAttribute('class', 'massage_view_hide_l');
+	  setTimeout(()=>{
+		  massage_view_1.setAttribute('class', 'hidden');
+		  massage_view_3.setAttribute('class', 'massage_view_3_l');
+	  }, 300);
+  } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
+  	massage_view_3.setAttribute('class', 'massage_view_hide_l');
+	  setTimeout(()=>{
+		  massage_view_3.setAttribute('class', 'hidden');
+		  massage_view_2.setAttribute('class', 'massage_view_2_l');
+	  }, 300);
+  } else if (massage_view_3.className === 'hidden' && massage_view_1.className === 'hidden') {
+  	massage_view_2.setAttribute('class', 'massage_view_hide_l');
+	  setTimeout(()=>{
+		  massage_view_2.setAttribute('class', 'hidden');
+		  massage_view_1.setAttribute('class', 'massage_view_1_l');
+	  }, 300);
+  }
 }
 
-function slide_3(){
-	massage_view.setAttribute('class', 'massage_view slide_anim_3');
-	desc_head.innerHTML = 'третий вид массажа';
-	desc_text.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod recusandae, voluptates architecto quisquam suscipit libero, molestias nam eoam eos adipisci, nemo illo illum totam at quasi provident laborum exercitationem quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. '
-	img.setAttribute('class', 'desc_img img_3');
-}
-
-function right_click() {
-	switch(img.className){
-		case 'desc_img img_1':
-		  slide_2();
-		  break;
-	  case 'desc_img img_2':
-	    slide_3();
-	    break;
-	  case 'desc_img img_3':
-	    slide_1();
-	    break;
-	}
-}
-
-function left_click() {
- switch(img.className){
-		case 'desc_img img_1':
-		  slide_3();
-		  break;
-	  case 'desc_img img_2':
-	    slide_1();
-	    break;
-	  case 'desc_img img_3':
-	    slide_2();
-	    break;
-	}
-}
  
 function head_mass_show() {
 	header.setAttribute('class', 'header header_blur');
@@ -144,17 +142,23 @@ function close_views() {
 }
 
 function scroll_to_view(event) {
-	massage_view.scrollIntoView({behavior: "smooth"});
+	massage_sect.scrollIntoView({behavior: "smooth"});
   let click_event = event.target;
   switch (click_event.textContent){
     case "первый вид массажа":
-      slide_1();
+      massage_view_2.setAttribute('class', 'hidden');
+      massage_view_3.setAttribute('class', 'hidden');
+      massage_view_1.setAttribute('class', 'massage_view_1_l');
       break;
     case "второй вид массажа":
-      slide_2();
+      massage_view_1.setAttribute('class', 'hidden');
+      massage_view_3.setAttribute('class', 'hidden');
+      massage_view_2.setAttribute('class', 'massage_view_2_r');
       break; 
     case "третий вид массажа":
-      slide_3();
+      massage_view_1.setAttribute('class', 'hidden');
+      massage_view_2.setAttribute('class', 'hidden');
+      massage_view_3.setAttribute('class', 'massage_view_3_l');
       break; 
     case "обо мне":
       about_sect.scrollIntoView({behavior: "smooth"}); 
@@ -196,23 +200,13 @@ function cover_curtain_hide() {
 const cordX = [];
 const cordY = [];
 
-
-
-massage_view.addEventListener('touchstart', touchSt);
-massage_view.addEventListener('touchend', touchOf);
-
-// massage_view.addEventListener('touchmove', touchmv);
-
-// function touchmv(event) {
-//   mv_cord.push(event.changedTouches[0].clientX);
-//   console.log(mv_cord.length);
-// 	// console.log (`движение ${event.changedTouches[0].clientX}`);
-// }
+massage_sect.addEventListener('touchstart', touchSt);
+massage_sect.addEventListener('touchend', touchOf);
 
 function touchSt(event) {
 	cordX[0] = event.changedTouches[0].clientX;
 	cordY[0] = event.changedTouches[0].clientY;
-}
+} 
 
 
 function touchOf(event) {
@@ -226,10 +220,6 @@ function touchOf(event) {
   let y = stY - endY;
   if (st > end && st - end > 300 && y > -100 && y < 100) {
   	right_click();
-  	// button_right.setAttribute('class', 'button_right_hide');
-  	// setTimeout(()=>{
-  	// 	button_right.setAttribute('class', 'hidden');
-  	// },400)
   	console.log(`вправо ${y}`);
   } else if (st < end && end - st > 300 && y > -100 && y < 100) {
   	left_click();
