@@ -206,7 +206,7 @@ massage_sect.addEventListener('touchend', touchOf);
 function touchSt(event) {
 	cordX[0] = event.changedTouches[0].clientX;
 	cordY[0] = event.changedTouches[0].clientY;
-}
+} 
 
 
 function touchOf(event) {
