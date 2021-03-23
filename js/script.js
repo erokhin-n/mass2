@@ -82,13 +82,13 @@ function r_slide_3(){
 	}, 300);
 }
 
-// function l_slide_3(){
-// 	massage_view_1.setAttribute('class', 'massage_view_hide');
-// 	setTimeout(()=>{
-// 		massage_view_1.setAttribute('class', 'hidden');
-// 		massage_view_3.setAttribute('class', 'massage_view_3');
-// 	}, 300);
-// }
+function l_slide_3(){
+	massage_view_1.setAttribute('class', 'massage_view_hide');
+	setTimeout(()=>{
+		massage_view_1.setAttribute('class', 'hidden');
+		massage_view_3.setAttribute('class', 'massage_view_3');
+	}, 300);
+}
 
 // function l_slide_2(){
 // 	massage_view_3.setAttribute('class', 'massage_view_hide');
