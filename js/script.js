@@ -201,18 +201,6 @@ const cordX = [];
 const cordY = [];
 
 
-
-// massage_view.addEventListener('touchstart', touchSt);
-// massage_view.addEventListener('touchend', touchOf);
-
-// massage_view.addEventListener('touchmove', touchmv);
-
-// function touchmv(event) {
-//   mv_cord.push(event.changedTouches[0].clientX);
-//   console.log(mv_cord.length);
-// 	// console.log (`движение ${event.changedTouches[0].clientX}`);
-// }
-
 function touchSt(event) {
 	cordX[0] = event.changedTouches[0].clientX;
 	cordY[0] = event.changedTouches[0].clientY;
