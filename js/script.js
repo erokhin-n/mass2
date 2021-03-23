@@ -68,22 +68,22 @@ function scroll_up() {
 
 function r_slide_2(){
 	if(massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
-    massage_view_1.setAttribute('class', 'massage_view_hide');
+    massage_view_1.setAttribute('class', 'massage_view_hide_r');
 	  setTimeout(()=>{
 		  massage_view_1.setAttribute('class', 'hidden');
-		  massage_view_2.setAttribute('class', 'massage_view_2');
+		  massage_view_2.setAttribute('class', 'massage_view_2_r');
 	  }, 300);
   } else if (massage_view_1.className === 'hidden' && massage_view_3.className === 'hidden') {
-  	massage_view_2.setAttribute('class', 'massage_view_hide');
+  	massage_view_2.setAttribute('class', 'massage_view_hide_r');
 	  setTimeout(()=>{
 		  massage_view_2.setAttribute('class', 'hidden');
-		  massage_view_3.setAttribute('class', 'massage_view_3');
+		  massage_view_3.setAttribute('class', 'massage_view_3_r');
 	  }, 300);
   } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
-    massage_view_3.setAttribute('class', 'massage_view_hide');
+    massage_view_3.setAttribute('class', 'massage_view_hide_r');
 	  setTimeout(()=>{
 		  massage_view_3.setAttribute('class', 'hidden');
-		  massage_view_1.setAttribute('class', 'massage_view_1');
+		  massage_view_1.setAttribute('class', 'massage_view_1_r');
 	  }, 300);
   }
 }
@@ -91,22 +91,22 @@ function r_slide_2(){
 
 function l_slide_2(){
   if( massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
-    massage_view_1.setAttribute('class', 'massage_view_hide');
+    massage_view_1.setAttribute('class', 'massage_view_hide_l');
 	  setTimeout(()=>{
 		  massage_view_1.setAttribute('class', 'hidden');
-		  massage_view_3.setAttribute('class', 'massage_view_3');
+		  massage_view_3.setAttribute('class', 'massage_view_3_l');
 	  }, 300);
   } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
-  	massage_view_3.setAttribute('class', 'massage_view_hide');
+  	massage_view_3.setAttribute('class', 'massage_view_hide_l');
 	  setTimeout(()=>{
 		  massage_view_3.setAttribute('class', 'hidden');
-		  massage_view_2.setAttribute('class', 'massage_view_2');
+		  massage_view_2.setAttribute('class', 'massage_view_2_l');
 	  }, 300);
   } else if (massage_view_3.className === 'hidden' && massage_view_1.className === 'hidden') {
-  	massage_view_2.setAttribute('class', 'massage_view_hide');
+  	massage_view_2.setAttribute('class', 'massage_view_hide_l');
 	  setTimeout(()=>{
 		  massage_view_2.setAttribute('class', 'hidden');
-		  massage_view_1.setAttribute('class', 'massage_view_1');
+		  massage_view_1.setAttribute('class', 'massage_view_1_l');
 	  }, 300);
   }
 }

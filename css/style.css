@@ -66,22 +66,28 @@ body {
 }
 
 
-@keyframes to_left_edge {
+@keyframes r_click_hide {
   0% {transform: translateX(0) scale(1);}
-  50% {transform: translateX(-50%) scale(0.5);}
-  100% {transform: translateX(-100%) scale(0);}
+  50% {transform: translateX(-25%) scale(0.5);}
+  100% {transform: translateX(-50%) scale(0);}
 }
 
-@keyframes to_right_edge {
-  0% {transform: translateX(100%) scale(0);}
-  50% {transform: translateX(50%) scale(0.5);}
+@keyframes r_click_show {
+  0% {transform: translateX(50%) scale(0);}
+  50% {transform: translateX(25%) scale(0.5);}
   100% {transform: translateX(0) scale(1);}
 }
 
-@keyframes rotate3 {
-  0% {opacity: 0;}
-  50% {opacity: 0.5;}
-  100% {opacity: 1;}
+@keyframes l_click_hide {
+  0% {transform: translateX(0) scale(1);}
+  50% {transform: translateX(25%) scale(0.5);}
+  100% {transform: translateX(50%) scale(0);}
+}
+
+@keyframes l_click_show {
+  0% {transform: translateX(-50%) scale(0);}
+  50% {transform: translateX(-25%) scale(0.5);}
+  100% {transform: translateX(0) scale(1);}
 }
  
 @keyframes up_head_views {
@@ -321,8 +327,11 @@ body {
   infinite;*/
 }
 
-.massage_view_1, .massage_view_2, .massage_view_3,
-.massage_view_hide {
+.massage_view_1_r, .massage_view_2_r, .massage_view_3_r,
+.massage_view_1_l, .massage_view_2_l, .massage_view_3_l,
+.massage_view_hide,
+.massage_view_hide_r,
+.massage_view_hide_l {
   min-width: 100%;
   min-height: 100vh;
   display: grid;
@@ -332,12 +341,20 @@ body {
 
 }
 
-.massage_view_hide {
-  animation: to_left_edge 0.5s linear;
+.massage_view_hide_r {
+  animation: r_click_hide 0.5s linear;
 }
 
-.massage_view_1, .massage_view_2, .massage_view_3 {
-  animation: to_right_edge 0.5s linear;
+.massage_view_hide_l {
+  animation: l_click_hide 0.5s linear;
+}
+
+.massage_view_1_r, .massage_view_2_r, .massage_view_3_r {
+  animation: r_click_show 0.5s linear;
+}
+
+.massage_view_1_l, .massage_view_2_l, .massage_view_3_l {
+  animation : l_click_show 0.5s linear;
 }
 
 
