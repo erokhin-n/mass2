@@ -1058,7 +1058,7 @@ body {
 .close_cont, .close_cont_opac {
   color: #fff;
   display: grid;
-  min-width: 7%;
+  min-width: 24%;
   max-height: 54%;
   font-size: 45px;
   border-radius: 10px;
@@ -1086,8 +1086,8 @@ body {
 
 .cross_cont:before, .cross_cont:after {
   content: ' ';
-  height: 1px;
-  width: 45px;
+  height: 5px;
+  width: 154px;
   background-color: #fff;
   display: block;
   top: 47%;
