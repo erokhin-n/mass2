@@ -788,14 +788,14 @@ body {
   box-shadow: 0px 1px 16px 4px #000
 }
 
-.contact_cont, .contact_cont_hide {
+/*.contact_cont, .contact_cont_hide {
   position: absolute;
   display: grid;
   bottom: 141%;
   height: 45%;
   min-width: 100%;
   animation: showV 0.4s linear;
-}
+}*/
 
 .contact_cont_hide {
   animation: disappears 0.4s linear;
