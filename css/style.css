@@ -802,26 +802,20 @@ body {
 }
 
 .contacts, .contacts_opac {
-  /*position: absolute;*/
   color: #fff;
   display: grid;
   max-width: 100%;
-  max-height: 46%;
+  max-height: 100%;
   font-size: 36px;
   border-radius: 10px;
   cursor: pointer; 
-  /*background-color: #fff;*/
   background-color: rgba(0, 0, 0, 0.5);
   justify-self: center;
-  /*padding: 15% 0 0 0;*/
   align-content: center;
   filter: 0px;
-  /*filter: none;*/
   padding: 0 10px 0 10px;
   animation: showV 0.4s linear;
   transition: 0.5s;
-/*  bottom: 145%;
-  left: 34%*/;
 }
 
 .contacts_opac {
@@ -836,20 +830,14 @@ body {
   font-size: 45px;
   border-radius: 10px;
   cursor: pointer; 
-  /*background-color: #fff;*/
   background-color: rgba(0, 0, 0, 0.5);
   justify-self: center;
-  /*padding: 15% 0 0 0;*/
   align-content: center;
   filter: 0px;
-  /*filter: none;*/
-  /*padding: 0 30px 0 30px;*/
   animation: showV 0.4s linear;
   transition: 0.5s;
-  /*position: absolute;*/
   left: 57%;
   bottom: 163%;
-  /*justify-content: center;*/
 }
 
 .close_cont_opac {
@@ -871,7 +859,6 @@ body {
   display: block;
   top: 47%;
   left: 28%;
-  /*position: absolute;*/
 }
 
 .cross_cont:before {
@@ -955,7 +942,6 @@ body {
     /*transform: scale(1) rotate(30deg);*/
   }
 
-  /*------------------------*/
   .button_up:active:before, .button_up:active:after {
     width: 228px;
     height: 32px;
@@ -971,7 +957,6 @@ body {
     transform: scale(1) rotate(30deg);
   }
 
-  /*---------------------------*/
 
   .button_up_hide:before, .button_up_hide:after {
     width: 228px;
@@ -984,14 +969,14 @@ body {
     left: 6%;
   }
 
-.contact_cont, .contact_cont_hide {
-  position: absolute;
-  display: grid;
-  bottom: 141%;
-  height: 45%;
-  min-width: 100%;
-  animation: showV 0.4s linear;
-}
+  .contact_cont, .contact_cont_hide {
+    position: absolute;
+    display: grid;
+    bottom: 141%;
+    height: 45%;
+    min-width: 100%;
+    animation: showV 0.4s linear;
+  }
   
   .close_cont {
     min-height: 11%;
@@ -1000,17 +985,27 @@ body {
     min-width: 25%;
     left: 64%;
   }
-  .contacts {
-    min-width: 100%;
-    left: 0;
-    font-size: 108px;
-    color: #fff;
+  .contacts, .contacts_opac {
+  color: #fff;
+  display: grid;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 36px;
+  border-radius: 10px;
+  cursor: pointer; 
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-self: center;
+  align-content: center;
+  filter: 0px;
+  padding: 0 10px 0 10px;
+  animation: showV 0.4s linear;
+  transition: 0.5s;
   }
+
   .contacts_opac {
-    min-width: 100%;
-    left: 0;
-    font-size: 108px;
+    animation: disappear 0.4s linear;
   }
+
   .cross_cont {
     justify-self: start;
     left: 29%;
