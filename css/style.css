@@ -969,7 +969,7 @@ body {
     left: 6%;
   }
 
-  .contact_cont, .contact_cont_hide {
+/*  .contact_cont, .contact_cont_hide {
     position: absolute;
     display: grid;
     bottom: 141%;
@@ -984,12 +984,12 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     min-width: 25%;
     left: 64%;
-  }
-  .contacts, .contacts_opac {
+  }*/
+/*  .contacts, .contacts_opac {
   color: #fff;
   display: grid;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 46%;
   font-size: 36px;
   border-radius: 10px;
   cursor: pointer; 
@@ -1000,12 +1000,12 @@ body {
   padding: 0 10px 0 10px;
   animation: showV 0.4s linear;
   transition: 0.5s;
-  }
-
+  }*/
+/*
   .contacts_opac {
     animation: disappear 0.4s linear;
   }
-
+*/
 /*  .cross_cont {
     justify-self: start;
     left: 29%;
@@ -1019,6 +1019,86 @@ body {
   .cross_cont:before {
     left: 5%;
   }*/
+  /*====================*/
+  .contact_cont, .contact_cont_hide {
+  position: absolute;
+  display: grid;
+  bottom: 141%;
+  height: 45%;
+  min-width: 100%;
+  animation: showV 0.4s linear;
+}
 
+.contact_cont_hide {
+  animation: disappear 0.4s linear;
+}
+
+.contacts, .contacts_opac {
+  color: #fff;
+  display: grid;
+  min-width: 100%;
+  max-height: 45%;
+  font-size: 108px;
+  border-radius: 10px;
+  cursor: pointer; 
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-self: center;
+  align-content: center;
+  filter: 0px;
+  padding: 0 10px 0 10px;
+  animation: showV 0.4s linear;
+  transition: 0.5s;
+}
+
+.contacts_opac {
+  animation: disappear 0.4s linear;
+}
+
+.close_cont, .close_cont_opac {
+  color: #fff;
+  display: grid;
+  min-width: 7%;
+  max-height: 54%;
+  font-size: 45px;
+  border-radius: 10px;
+  cursor: pointer; 
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-self: center;
+  align-content: center;
+  filter: 0px;
+  animation: showV 0.4s linear;
+  transition: 0.5s;
+  left: 57%;
+  bottom: 163%;
+}
+
+.close_cont_opac {
+  animation: disappear 0.4s linear;
+}
+
+.cross_cont {
+  justify-self: center;
+  display: block;
+  position: relative;
+  align-self: start;
+}
+
+.cross_cont:before, .cross_cont:after {
+  content: ' ';
+  height: 1px;
+  width: 45px;
+  background-color: #fff;
+  display: block;
+  top: 47%;
+  left: 28%;
+}
+
+.cross_cont:before {
+  transform: rotate(45deg);
+}
+
+.cross_cont:after {
+  transform: rotate(-45deg);
+}
 }
 
