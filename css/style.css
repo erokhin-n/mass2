@@ -1006,7 +1006,7 @@ body {
     animation: disappear 0.4s linear;
   }
 
-  .cross_cont {
+/*  .cross_cont {
     justify-self: start;
     left: 29%;
   }
@@ -1018,7 +1018,7 @@ body {
   }
   .cross_cont:before {
     left: 5%;
-  }
+  }*/
 
 }
 
