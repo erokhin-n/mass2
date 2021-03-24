@@ -788,20 +788,20 @@ body {
   box-shadow: 0px 1px 16px 4px #000
 }
 
-/*.contact_cont, .contact_cont_hide {
+.contact_cont, .contact_cont_hide {
   position: absolute;
   display: grid;
   bottom: 141%;
   height: 45%;
   min-width: 100%;
   animation: showV 0.4s linear;
-}*/
+}
 
-/*.contact_cont_hide {
+.contact_cont_hide {
   animation: disappear 0.4s linear;
-}*/
+}
 
-/*.contacts, .contacts_opac {
+.contacts, .contacts_opac {
   color: #fff;
   display: grid;
   max-width: 100%;
@@ -816,13 +816,13 @@ body {
   padding: 0 10px 0 10px;
   animation: showV 0.4s linear;
   transition: 0.5s;
-}*/
+}
 
-/*.contacts_opac {
+.contacts_opac {
   animation: disappear 0.4s linear;
 }
-*/
-/*.close_cont, .close_cont_opac {
+
+.close_cont, .close_cont_opac {
   color: #fff;
   display: grid;
   min-width: 7%;
@@ -838,7 +838,7 @@ body {
   transition: 0.5s;
   left: 57%;
   bottom: 163%;
-}*/
+}
 
 .close_cont_opac {
   animation: disappear 0.4s linear;
@@ -969,7 +969,7 @@ body {
     left: 6%;
   }
 
-  .contact_cont, .contact_cont_hide {
+/*  .contact_cont, .contact_cont_hide {
     position: absolute;
     display: grid;
     bottom: 141%;
@@ -1019,6 +1019,6 @@ body {
   .cross_cont:before {
     left: 5%;
   }
-
+*/
 }
 
