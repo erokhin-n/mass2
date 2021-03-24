@@ -795,7 +795,6 @@ body {
   height: 45%;
   min-width: 100%;
   animation: showV 0.4s linear;
-  background-color: green;
 }
 
 .contact_cont_hide {
@@ -984,6 +983,15 @@ body {
   .button_up_hide:after {
     left: 6%;
   }
+
+.contact_cont, .contact_cont_hide {
+  position: absolute;
+  display: grid;
+  bottom: 141%;
+  height: 45%;
+  min-width: 100%;
+  animation: showV 0.4s linear;
+}
   
   .close_cont {
     min-height: 11%;
