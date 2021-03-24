@@ -801,7 +801,7 @@ body {
   animation: disappears 0.4s linear;
 }
 
-.contacts, .contacts_opac {
+/*.contacts, .contacts_opac {
   color: #fff;
   display: grid;
   max-width: 100%;
@@ -816,7 +816,7 @@ body {
   padding: 0 10px 0 10px;
   animation: showV 0.4s linear;
   transition: 0.5s;
-}
+}*/
 
 .contacts_opac {
   animation: disappear 0.4s linear;
