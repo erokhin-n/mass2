@@ -795,6 +795,7 @@ body {
   height: 45%;
   min-width: 100%;
   animation: showV 0.4s linear;
+  background-color: green;
 }
 
 .contact_cont_hide {
