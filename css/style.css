@@ -60,34 +60,57 @@ h1, h2, h3, h4, h5, h6 {
 
 /*конец*/
 
-
 body {
   font-family: 'Montserrat';
 }
 
-
 @keyframes r_click_hide {
-  0% {transform: translateX(0) scale(1);}
-  50% {transform: translateX(-25%) scale(0.5);}
-  100% {transform: translateX(-50%) scale(0);}
+  0% {transform: translateX(0) scale(1);
+     opacity: 1
+  }
+  50% {transform: translateX(-25%) scale(0.5);
+    opacity: 0.5;
+  }
+  100% {transform: translateX(-50%) scale(0);
+    opacity: 0;
+
+  }
 }
 
 @keyframes r_click_show {
-  0% {transform: translateX(50%) scale(0);}
-  50% {transform: translateX(25%) scale(0.5);}
-  100% {transform: translateX(0) scale(1);}
+  0% {transform: translateX(50%) scale(0);
+    opacity: 0;
+  }
+  50% {transform: translateX(25%) scale(0.5);
+    opacity: 0.5;
+  }
+  100% {transform: translateX(0) scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes l_click_hide {
-  0% {transform: translateX(0) scale(1);}
-  50% {transform: translateX(25%) scale(0.5);}
-  100% {transform: translateX(50%) scale(0);}
+  0% {transform: translateX(0) scale(1);
+    opacity: 1
+  }
+  50% {transform: translateX(25%) scale(0.5);
+    opacity: 0.5;
+  }
+  100% {transform: translateX(50%) scale(0);
+    opacity: 0;
+  }
 }
 
 @keyframes l_click_show {
-  0% {transform: translateX(-50%) scale(0);}
-  50% {transform: translateX(-25%) scale(0.5);}
-  100% {transform: translateX(0) scale(1);}
+  0% {transform: translateX(-50%) scale(0);
+    opacity: 0;
+  }
+  50% {transform: translateX(-25%) scale(0.5);
+    opacity: 0.5;
+  }
+  100% {transform: translateX(0) scale(1);
+    opacity: 1
+  }
 }
  
 @keyframes up_head_views {
@@ -590,13 +613,11 @@ body {
 .button_left_hide:before, .button_left_hide:after {
   content: ' ';
   position: absolute;
-  /*transform: rotate(45deg);*/
   background-color: rgba(0, 0, 0, 0.2);
   width: 100px;
   height: 10px;
   display: block;
   border-radius: 10px;
-  /*box-shadow: 0px 0px 13px 7px #808080;*/
 }
 
 .button_left_hide:before {
@@ -614,7 +635,6 @@ body {
 
 .button_left:hover:before, .button_left:hover:after {
   transition: 0.4s;
-  /*transform: scale(1.8);*/
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -659,22 +679,18 @@ body {
 .button_up:before, .button_up:after {
   content: ' ';
   position: absolute;
-  /*transform: rotate(45deg);*/
   background-color: rgba(0, 0, 0, 0.2);
   width: 100px;
   height: 10px;
   display: block;
   border-radius: 10px;
-  /*box-shadow: 0px 0px 13px 7px #808080;*/
   transition: 0.4s;
 }
 
 .button_up:before {
   transform: rotate(-30deg);
-  /*left: 2%;*/
   top: 83%;
   right: 18%;
-  /*bottom: 129%;*/
 }
 
 .button_up:after {
@@ -736,7 +752,6 @@ body {
 
 .button_up:active:before, .button_up:active:after {
   transition: 0.4s;
-  /*transform: scale(1.8);*/
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -749,7 +764,7 @@ body {
   transform: rotate(40deg) scale(1.2);
   left: 45%;
 }
-/*обо мне*/
+
 .about_me_1 {
   min-width: 100%;
   min-height: 100vh;
@@ -870,7 +885,6 @@ body {
 }
 
 @media (min-device-width: 320px) and (max-device-width: 1023px) and (orientation: portrait) { 
-
   .menu_heading {
     font-size: 80px;
   }
@@ -931,7 +945,6 @@ body {
 
   .button_up:hover:before {
     right: 43%;
-    /*transform: scale(1) rotate(-30deg);*/
   }
   .button_up:after {
     left: 3%;
@@ -969,57 +982,6 @@ body {
     left: 6%;
   }
 
-/*  .contact_cont, .contact_cont_hide {
-    position: absolute;
-    display: grid;
-    bottom: 141%;
-    height: 45%;
-    min-width: 100%;
-    animation: showV 0.4s linear;
-  }
-  
-  .close_cont {
-    min-height: 11%;
-    font-size: 53px;
-    background-color: rgba(0, 0, 0, 0.5);
-    min-width: 25%;
-    left: 64%;
-  }*/
-/*  .contacts, .contacts_opac {
-  color: #fff;
-  display: grid;
-  max-width: 100%;
-  max-height: 46%;
-  font-size: 36px;
-  border-radius: 10px;
-  cursor: pointer; 
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-self: center;
-  align-content: center;
-  filter: 0px;
-  padding: 0 10px 0 10px;
-  animation: showV 0.4s linear;
-  transition: 0.5s;
-  }*/
-/*
-  .contacts_opac {
-    animation: disappear 0.4s linear;
-  }
-*/
-/*  .cross_cont {
-    justify-self: start;
-    left: 29%;
-  }
-
-  .cross_cont:before, .cross_cont:after {
-    height: 10px;
-    width: 103px;
-    position: absolute;
-  }
-  .cross_cont:before {
-    left: 5%;
-  }*/
-  /*====================*/
   .contact_cont, .contact_cont_hide {
   position: absolute;
   display: grid;
