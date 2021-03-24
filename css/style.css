@@ -798,7 +798,7 @@ body {
 }*/
 
 .contact_cont_hide {
-  animation: disappears 0.4s linear;
+  animation: disappear 0.4s linear;
 }
 
 /*.contacts, .contacts_opac {
@@ -818,11 +818,11 @@ body {
   transition: 0.5s;
 }*/
 
-.contacts_opac {
+/*.contacts_opac {
   animation: disappear 0.4s linear;
 }
-
-.close_cont, .close_cont_opac {
+*/
+/*.close_cont, .close_cont_opac {
   color: #fff;
   display: grid;
   min-width: 7%;
@@ -838,7 +838,7 @@ body {
   transition: 0.5s;
   left: 57%;
   bottom: 163%;
-}
+}*/
 
 .close_cont_opac {
   animation: disappear 0.4s linear;
