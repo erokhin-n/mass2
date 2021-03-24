@@ -1024,9 +1024,10 @@ body {
   position: absolute;
   display: grid;
   bottom: 141%;
-  height: 45%;
+  min-height: 45%;
   min-width: 100%;
   animation: showV 0.4s linear;
+  color: #fff;
 }
 
 .contact_cont_hide {
@@ -1099,6 +1100,6 @@ body {
 
 .cross_cont:after {
   transform: rotate(-45deg);
-}
+ }
 }
 
