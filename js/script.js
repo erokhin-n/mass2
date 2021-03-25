@@ -28,7 +28,6 @@ window.addEventListener('scroll', function() {
   let scroll_height = document.documentElement.scrollHeight;
   let scroll_procent = Math.floor((scroll_px / scroll_height) * 100);
   let scroll_proc = document.getElementById('scroll_proc');
-  scroll_proc.innerHTML = scroll_procent;
 
   if (scroll_procent > 30){
   	button_up.setAttribute('class', 'button_up');
@@ -48,7 +47,7 @@ window.addEventListener('scroll', function() {
   	setTimeout(()=>{
   	  button_right.setAttribute('class', 'hidden');
   	  button_left.setAttribute('class', 'hidden');	
-  	}, 400);	
+  	}, 400);
   }
 });
 
@@ -63,19 +62,19 @@ function right_click(){
 	  setTimeout(()=>{
 		  massage_view_1.setAttribute('class', 'hidden');
 		  massage_view_2.setAttribute('class', 'massage_view_2_r');
-	  }, 300);
+	  }, 200);
   } else if (massage_view_1.className === 'hidden' && massage_view_3.className === 'hidden') {
   	massage_view_2.setAttribute('class', 'massage_view_hide_r');
 	  setTimeout(()=>{
 		  massage_view_2.setAttribute('class', 'hidden');
 		  massage_view_3.setAttribute('class', 'massage_view_3_r');
-	  }, 300);
+	  }, 200);
   } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
     massage_view_3.setAttribute('class', 'massage_view_hide_r');
 	  setTimeout(()=>{
 		  massage_view_3.setAttribute('class', 'hidden');
 		  massage_view_1.setAttribute('class', 'massage_view_1_r');
-	  }, 300);
+	  }, 200);
   }
 }
 
@@ -86,19 +85,19 @@ function left_click(){
 	  setTimeout(()=>{
 		  massage_view_1.setAttribute('class', 'hidden');
 		  massage_view_3.setAttribute('class', 'massage_view_3_l');
-	  }, 300);
+	  }, 200);
   } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
   	massage_view_3.setAttribute('class', 'massage_view_hide_l');
 	  setTimeout(()=>{
 		  massage_view_3.setAttribute('class', 'hidden');
 		  massage_view_2.setAttribute('class', 'massage_view_2_l');
-	  }, 300);
+	  }, 200);
   } else if (massage_view_3.className === 'hidden' && massage_view_1.className === 'hidden') {
   	massage_view_2.setAttribute('class', 'massage_view_hide_l');
 	  setTimeout(()=>{
 		  massage_view_2.setAttribute('class', 'hidden');
 		  massage_view_1.setAttribute('class', 'massage_view_1_l');
-	  }, 300);
+	  }, 200);
   }
 }
 
@@ -165,8 +164,6 @@ function scroll_to_view(event) {
       break;   
   }
 }
-
-
 
 function show_contact() {
   header.setAttribute('class', 'header header_blur');

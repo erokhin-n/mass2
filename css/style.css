@@ -365,19 +365,19 @@ body {
 }
 
 .massage_view_hide_r {
-  animation: r_click_hide 0.5s linear;
+  animation: r_click_hide 0.3s linear;
 }
 
 .massage_view_hide_l {
-  animation: l_click_hide 0.5s linear;
+  animation: l_click_hide 0.3s linear;
 }
 
 .massage_view_1_r, .massage_view_2_r, .massage_view_3_r {
-  animation: r_click_show 0.5s linear;
+  animation: r_click_show 0.3s linear;
 }
 
 .massage_view_1_l, .massage_view_2_l, .massage_view_3_l {
-  animation : l_click_show 0.5s linear;
+  animation : l_click_show 0.3s linear;
 }
 
 
