@@ -969,7 +969,7 @@ body {
     left: 6%;
   }
 
-.contact_cont, .contact_cont_hide {
+/*.contact_cont, .contact_cont_hide {
   position: absolute;
   display: grid;
   bottom: 141%;
@@ -1017,8 +1017,6 @@ body {
   align-content: center;
   animation: showV 0.4s linear;
   transition: 0.5s;
-  left: 57%;
-  bottom: 163%;
   background-color: red;
 }
 
@@ -1049,6 +1047,6 @@ body {
 
 .cross_cont:after {
   transform: rotate(-45deg);
- }
+ }*/
 }
 
