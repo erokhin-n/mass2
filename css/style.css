@@ -873,7 +873,7 @@ body {
   transform: rotate(-45deg);
 }
 
-@media (min-device-width: 320px) and (max-device-width: 1023px) and (orientation: portrait) and (min-width: 320px) and (max-width: 1023px)  { 
+@media (min-device-width: 320px) and (max-device-width: 1023px) and (orientation: portrait)  { 
   .menu_heading {
     font-size: 80px;
   }
