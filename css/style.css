@@ -976,7 +976,7 @@ body {
 
   .contacts, .contacts_opac {
     font-size: 96px;
-    color: red;
+    text-decoration: none;
   }
 
   .close_cont, .close_cont_opac {
