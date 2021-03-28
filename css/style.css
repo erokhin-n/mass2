@@ -829,7 +829,7 @@ body {
 .close_cont, .close_cont_opac {
   color: #fff;
   display: grid;
-  min-width: 70%;
+  min-width: 7%;
   max-height: 54%;
   font-size: 45px;
   border-radius: 10px;
@@ -1015,11 +1015,12 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   justify-self: center;
   align-content: center;
-  filter: 0px;
+  /*filter: 0px;*/
   animation: showV 0.4s linear;
   transition: 0.5s;
   left: 57%;
   bottom: 163%;
+  background-color: red;
 }
 
 .close_cont_opac {
