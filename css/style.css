@@ -971,12 +971,12 @@ body {
 
   .contact_cont, .contact_cont_hide {
     min-width:  100%;
-    min-height: 13vh;
+    min-height: 40vh;
   }
 
   .contacts, .contacts_opac {
     font-size: 110px;
-    color: #ffffff;
+    color: white;
   }
 }
 
