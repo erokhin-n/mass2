@@ -978,5 +978,13 @@ body {
     font-size: 96px;
     color: #fff;
   }
+
+  .close_cont, .close_cont_opac {
+    min-width: 22%;
+  }
+  .cross_cont:before, .cross_cont:after {
+    height: 5px;
+    width: 145px;
+  }
 }
 
