@@ -796,7 +796,7 @@ body {
   position: absolute;
   display: grid;
   bottom: 141%;
-  min-height: 13vh;
+  min-height: 50vh;
   min-width: 100%;
   animation: showV 0.4s linear;
 }
