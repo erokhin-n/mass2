@@ -977,8 +977,6 @@ body {
   .contacts, .contacts_opac {
     font-size: 96px;
     color: #fff;
-    -webkit-text-fill-color: #fff; 
-   -webkit-opacity: 1; 
   }
 }
 
