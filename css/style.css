@@ -829,7 +829,7 @@ body {
 .close_cont, .close_cont_opac {
   color: #fff;
   display: grid;
-  min-width: 7%;
+  min-width: 70%;
   max-height: 54%;
   font-size: 45px;
   border-radius: 10px;
